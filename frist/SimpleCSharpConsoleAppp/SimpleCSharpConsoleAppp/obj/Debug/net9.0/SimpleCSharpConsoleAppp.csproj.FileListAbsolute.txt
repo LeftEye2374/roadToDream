@@ -1,0 +1,14 @@
+/Users/mihail/Desktop/git/roadToDream/frist/SimpleCSharpConsoleAppp/SimpleCSharpConsoleAppp/bin/Debug/net9.0/SimpleCSharpConsoleAppp
+/Users/mihail/Desktop/git/roadToDream/frist/SimpleCSharpConsoleAppp/SimpleCSharpConsoleAppp/bin/Debug/net9.0/SimpleCSharpConsoleAppp.deps.json
+/Users/mihail/Desktop/git/roadToDream/frist/SimpleCSharpConsoleAppp/SimpleCSharpConsoleAppp/bin/Debug/net9.0/SimpleCSharpConsoleAppp.runtimeconfig.json
+/Users/mihail/Desktop/git/roadToDream/frist/SimpleCSharpConsoleAppp/SimpleCSharpConsoleAppp/bin/Debug/net9.0/SimpleCSharpConsoleAppp.dll
+/Users/mihail/Desktop/git/roadToDream/frist/SimpleCSharpConsoleAppp/SimpleCSharpConsoleAppp/bin/Debug/net9.0/SimpleCSharpConsoleAppp.pdb
+/Users/mihail/Desktop/git/roadToDream/frist/SimpleCSharpConsoleAppp/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mihail/Desktop/git/roadToDream/frist/SimpleCSharpConsoleAppp/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.AssemblyInfoInputs.cache
+/Users/mihail/Desktop/git/roadToDream/frist/SimpleCSharpConsoleAppp/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.AssemblyInfo.cs
+/Users/mihail/Desktop/git/roadToDream/frist/SimpleCSharpConsoleAppp/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.csproj.CoreCompileInputs.cache
+/Users/mihail/Desktop/git/roadToDream/frist/SimpleCSharpConsoleAppp/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.dll
+/Users/mihail/Desktop/git/roadToDream/frist/SimpleCSharpConsoleAppp/SimpleCSharpConsoleAppp/obj/Debug/net9.0/refint/SimpleCSharpConsoleAppp.dll
+/Users/mihail/Desktop/git/roadToDream/frist/SimpleCSharpConsoleAppp/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.pdb
+/Users/mihail/Desktop/git/roadToDream/frist/SimpleCSharpConsoleAppp/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.genruntimeconfig.cache
+/Users/mihail/Desktop/git/roadToDream/frist/SimpleCSharpConsoleAppp/SimpleCSharpConsoleAppp/obj/Debug/net9.0/ref/SimpleCSharpConsoleAppp.dll

@@ -12,3 +12,4 @@
 /Users/mihail/Desktop/git/roadToDream/frist/SimpleCSharpConsoleAppp/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.pdb
 /Users/mihail/Desktop/git/roadToDream/frist/SimpleCSharpConsoleAppp/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.genruntimeconfig.cache
 /Users/mihail/Desktop/git/roadToDream/frist/SimpleCSharpConsoleAppp/SimpleCSharpConsoleAppp/obj/Debug/net9.0/ref/SimpleCSharpConsoleAppp.dll
+/Users/mihail/Desktop/git/roadToDream/frist/SimpleCSharpConsoleAppp/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.sourcelink.json

@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2afa4dd8-ece0-4829-935d-07af91c1bdea" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SimpleCSharpConsoleAppp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SimpleCSharpConsoleAppp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/bin/Debug/net9.0/SimpleCSharpConsoleAppp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/bin/Debug/net9.0/SimpleCSharpConsoleAppp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/bin/Debug/net9.0/SimpleCSharpConsoleAppp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/bin/Debug/net9.0/SimpleCSharpConsoleAppp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/ref/SimpleCSharpConsoleAppp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/ref/SimpleCSharpConsoleAppp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/refint/SimpleCSharpConsoleAppp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/refint/SimpleCSharpConsoleAppp.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +31,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/SimpleCSharpConsoleAppp/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="32mitjTBYCBrqwNf1AsGHgAPoSa" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,14 +46,19 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="SimpleCSharpConsoleAppp" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/SimpleCSharpConsoleAppp/bin/Debug/net9.0/SimpleCSharpConsoleAppp" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SimpleCSharpConsoleAppp/bin/Debug/net9.0" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
@@ -61,7 +73,7 @@
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value="net9.0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -75,6 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1758032364997</updated>
       <workItem from="1758032366242" duration="126000" />
+      <workItem from="1758205274959" duration="343000" />
     </task>
     <servers />
   </component>

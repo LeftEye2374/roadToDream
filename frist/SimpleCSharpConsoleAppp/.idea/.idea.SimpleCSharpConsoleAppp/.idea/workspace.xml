@@ -7,19 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2afa4dd8-ece0-4829-935d-07af91c1bdea" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SimpleCSharpConsoleAppp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SimpleCSharpConsoleAppp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/bin/Debug/net9.0/SimpleCSharpConsoleAppp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/bin/Debug/net9.0/SimpleCSharpConsoleAppp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/bin/Debug/net9.0/SimpleCSharpConsoleAppp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/bin/Debug/net9.0/SimpleCSharpConsoleAppp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/SimpleCSharpConsoleAppp.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/ref/SimpleCSharpConsoleAppp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/ref/SimpleCSharpConsoleAppp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/refint/SimpleCSharpConsoleAppp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleCSharpConsoleAppp/obj/Debug/net9.0/refint/SimpleCSharpConsoleAppp.dll" afterDir="false" />
-    </list>
+    <list default="true" id="2afa4dd8-ece0-4829-935d-07af91c1bdea" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +21,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/SimpleCSharpConsoleAppp/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file:///usr/local/share/dotnet/sdk/9.0.304/Sdks/Microsoft.NET.Sdk/Sdk/Sdk.props" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -91,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1758032364997</updated>
       <workItem from="1758032366242" duration="126000" />
-      <workItem from="1758205274959" duration="693000" />
+      <workItem from="1758205274959" duration="1133000" />
     </task>
     <servers />
   </component>

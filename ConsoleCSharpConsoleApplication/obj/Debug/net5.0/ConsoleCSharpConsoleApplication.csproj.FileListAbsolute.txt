@@ -1,0 +1,15 @@
+C:\Users\Mikhail\Desktop\gitt\roadToDream\ConsoleCSharpConsoleApplication\bin\Debug\net5.0\ConsoleCSharpConsoleApplication.exe
+C:\Users\Mikhail\Desktop\gitt\roadToDream\ConsoleCSharpConsoleApplication\bin\Debug\net5.0\ConsoleCSharpConsoleApplication.deps.json
+C:\Users\Mikhail\Desktop\gitt\roadToDream\ConsoleCSharpConsoleApplication\bin\Debug\net5.0\ConsoleCSharpConsoleApplication.runtimeconfig.json
+C:\Users\Mikhail\Desktop\gitt\roadToDream\ConsoleCSharpConsoleApplication\bin\Debug\net5.0\ConsoleCSharpConsoleApplication.runtimeconfig.dev.json
+C:\Users\Mikhail\Desktop\gitt\roadToDream\ConsoleCSharpConsoleApplication\bin\Debug\net5.0\ConsoleCSharpConsoleApplication.dll
+C:\Users\Mikhail\Desktop\gitt\roadToDream\ConsoleCSharpConsoleApplication\bin\Debug\net5.0\ConsoleCSharpConsoleApplication.pdb
+C:\Users\Mikhail\Desktop\gitt\roadToDream\ConsoleCSharpConsoleApplication\obj\Debug\net5.0\ConsoleCSharpConsoleApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mikhail\Desktop\gitt\roadToDream\ConsoleCSharpConsoleApplication\obj\Debug\net5.0\ConsoleCSharpConsoleApplication.AssemblyInfoInputs.cache
+C:\Users\Mikhail\Desktop\gitt\roadToDream\ConsoleCSharpConsoleApplication\obj\Debug\net5.0\ConsoleCSharpConsoleApplication.AssemblyInfo.cs
+C:\Users\Mikhail\Desktop\gitt\roadToDream\ConsoleCSharpConsoleApplication\obj\Debug\net5.0\ConsoleCSharpConsoleApplication.csproj.CoreCompileInputs.cache
+C:\Users\Mikhail\Desktop\gitt\roadToDream\ConsoleCSharpConsoleApplication\obj\Debug\net5.0\ConsoleCSharpConsoleApplication.dll
+C:\Users\Mikhail\Desktop\gitt\roadToDream\ConsoleCSharpConsoleApplication\obj\Debug\net5.0\refint\ConsoleCSharpConsoleApplication.dll
+C:\Users\Mikhail\Desktop\gitt\roadToDream\ConsoleCSharpConsoleApplication\obj\Debug\net5.0\ConsoleCSharpConsoleApplication.pdb
+C:\Users\Mikhail\Desktop\gitt\roadToDream\ConsoleCSharpConsoleApplication\obj\Debug\net5.0\ConsoleCSharpConsoleApplication.genruntimeconfig.cache
+C:\Users\Mikhail\Desktop\gitt\roadToDream\ConsoleCSharpConsoleApplication\obj\Debug\net5.0\ref\ConsoleCSharpConsoleApplication.dll

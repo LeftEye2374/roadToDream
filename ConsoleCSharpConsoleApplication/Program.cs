@@ -6,6 +6,7 @@ namespace ConsoleCSharpConsoleApplication
     {
         static void Main(string[] args)
         {
+            Console.Title = "My console app";
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Blue;
             Console.WriteLine("****************************************************");

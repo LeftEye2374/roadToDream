@@ -11,3 +11,9 @@ static void LocalVarDeclarations()
     myString = "This is my character data";
     Console.WriteLine();
 }
+
+static void DefaultDeclarations()
+{
+    Console.WriteLine("=> Default Declarations");
+    int myInt = default;
+}

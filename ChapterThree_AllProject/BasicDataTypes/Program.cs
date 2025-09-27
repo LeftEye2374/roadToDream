@@ -28,3 +28,13 @@ static void NewingDataType()
     Console.WriteLine("{ 0},{ 1},{ 2},{ 3}", b, i, d, dt);
     Console.WriteLine();
 }
+
+static void ObjectFunctionality()
+{
+    Console.WriteLine("=> Syste.Object functionality");
+    Console.WriteLine("12.GetHashCode = {0}", 12.GetHashCode);
+    Console.WriteLine("12.Equals(23) = {0}", 12.Equals(23));
+    Console.WriteLine("12.ToString() ={0}", 12.ToString());
+    Console.WriteLine("12.GetType() = {0}", 12.GetType());
+    Console.WriteLine();
+}

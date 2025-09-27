@@ -83,3 +83,33 @@ static void ParseFromStrings()
     Console.WriteLine("Value of c: {0}", c);
     Console.WriteLine();
 }
+
+static void ParseFromStringsWithTryParse()
+{
+    Console.WriteLine("=> Data type parsing with TryParse:");
+    if (bool.TryParse("True", out bool b))
+    {
+        // Вывод значения b
+        Console.WriteLine("Value of b: {0}", b);
+    }
+    else
+    {
+    }
+    Console.WriteLine("Default value of b: {0}", b);
+    // Вывод стандартного значения b
+    string value = "Hello";
+    if (double.TryParse(value, out double d))
+    {
+    }
+    Console.WriteLine("Value of d: {0}", d);
+ else
+    {
+        // Преобразование входного значения в double потерпело неудачу
+        // и переменной было присвоено стандартное значение.
+        Console.WriteLine("Failed to convert the input ({0}) to a double
+       
+        and the variable was assigned the default { 1}
+        ", value,d);
+ }
+    Console.WriteLine();
+}

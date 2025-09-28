@@ -122,3 +122,16 @@ static void UseDateAndTime() {
     Console.WriteLine(ts);
     Console.WriteLine(ts.Subtract(new TimeSpan(0, 15, 0));
 }
+
+static void UseBigInteger()
+{
+    Console.WriteLine("=> Use BigInteger");
+    Biglnteger.Parse("9999999999999999999999999999999999999999999999");
+    Console.WriteLine("Value of biggy is {0}", biggy);
+    Console.WriteLine("Is biggy an even value?: {0}", biggy.IsEven);
+    Console.WriteLine("Is biggy a power of two?: {0}", biggy.
+    IsPowerOfTwo);
+    Biglnteger reallyBig = Biglnteger.Multiply(biggy,
+    Biglnteger.Parse("8888888888888888888888888888888888888888888"));
+    Console.WriteLine("Value of reallyBig is {0}", reallyBig);
+}

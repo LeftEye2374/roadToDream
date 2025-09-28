@@ -104,12 +104,21 @@ static void ParseFromStringsWithTryParse()
     Console.WriteLine("Value of d: {0}", d);
  else
     {
-        // Преобразование входного значения в double потерпело неудачу
-        // и переменной было присвоено стандартное значение.
         Console.WriteLine("Failed to convert the input ({0}) to a double
        
         and the variable was assigned the default { 1}
         ", value,d);
  }
     Console.WriteLine();
+}
+
+static void UseDateAndTime() {
+    Console.WriteLine("=> Use date and time");
+    DateTime dt = new DateTime(2015,10,17);
+    Console.WriteLine("The day of {0} is {1}", dt.Date , dt.DayOfWeek);
+    dt.AddMonths(2);
+    Console.WriteLine("Daylight savings: {0}", dt.IsDaylightSavingTime);
+    TimeSpan ts = new TimeSpan(4, 30, 0);
+    Console.WriteLine(ts);
+    Console.WriteLine(ts.Subtract(new TimeSpan(0, 15, 0));
 }

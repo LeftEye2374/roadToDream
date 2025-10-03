@@ -15,7 +15,7 @@
         return x + y;
     }
 
-    static vodi NarrowingAttemp()
+    static void NarrowingAttemp()
     {
         byte myByte = 0;
         int mylnt = 200;

@@ -2,7 +2,7 @@
 {
     static void Main(String[] args)
     {
-        ProcessByte;
+        ProcessByte();
     }
 
     static void ProcessByte()
@@ -10,11 +10,11 @@
         byte b1 = 100;
         byte b2 = 250;
         try
-        {
-            byte sum = b1 + b2;
+        { 
+            byte sum = checked((byte)Add(b1, b2)); 
             Console.WriteLine("Sum = {0}", sum);
         }
-        catch(OverflowException e) {
+        catch(OverflowException e) 
         {
             Console.WriteLine(e.Message);
         }

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransferData", "TransferDat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChekedUncheked", "ChekedUncheked\ChekedUncheked.csproj", "{F3F135CE-D42C-46CC-A76A-562F850AE19D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IterationOp", "IterationOp\IterationOp.csproj", "{EDB5BDBA-80E5-4E13-808A-422D796DBC40}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,18 @@ Global
 		{F3F135CE-D42C-46CC-A76A-562F850AE19D}.Release|x64.Build.0 = Release|Any CPU
 		{F3F135CE-D42C-46CC-A76A-562F850AE19D}.Release|x86.ActiveCfg = Release|Any CPU
 		{F3F135CE-D42C-46CC-A76A-562F850AE19D}.Release|x86.Build.0 = Release|Any CPU
+		{EDB5BDBA-80E5-4E13-808A-422D796DBC40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDB5BDBA-80E5-4E13-808A-422D796DBC40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDB5BDBA-80E5-4E13-808A-422D796DBC40}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EDB5BDBA-80E5-4E13-808A-422D796DBC40}.Debug|x64.Build.0 = Debug|Any CPU
+		{EDB5BDBA-80E5-4E13-808A-422D796DBC40}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EDB5BDBA-80E5-4E13-808A-422D796DBC40}.Debug|x86.Build.0 = Debug|Any CPU
+		{EDB5BDBA-80E5-4E13-808A-422D796DBC40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDB5BDBA-80E5-4E13-808A-422D796DBC40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDB5BDBA-80E5-4E13-808A-422D796DBC40}.Release|x64.ActiveCfg = Release|Any CPU
+		{EDB5BDBA-80E5-4E13-808A-422D796DBC40}.Release|x64.Build.0 = Release|Any CPU
+		{EDB5BDBA-80E5-4E13-808A-422D796DBC40}.Release|x86.ActiveCfg = Release|Any CPU
+		{EDB5BDBA-80E5-4E13-808A-422D796DBC40}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

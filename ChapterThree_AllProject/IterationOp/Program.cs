@@ -12,6 +12,8 @@ class Program
         LinkqQueryOverInts();
         Console.WriteLine("______________________________________");
         WhileLoopEaxample();
+        Console.WriteLine("______________________________________");
+        DoWhileLoopExample();
     }
 
     static void ForLoopExample()
@@ -43,6 +45,7 @@ class Program
 
     static void WhileLoopEaxample()
     {
+        Console.WriteLine("While Loop Example");
         string userIsDone = "";
         while(userIsDone.ToLower() != "yes")
         {
@@ -50,5 +53,17 @@ class Program
             Console.Write("Are you done? [yes] [no] :");
             userIsDone = Console.ReadLine();
         }
+    }
+
+    static void DoWhileLoopExample()
+    {
+        Console.WriteLine("Do While Loop Example");
+        string userIsDone = "";
+        do
+        {
+            Console.WriteLine("In while loop");
+            Console.Write("Are you done? [yes] [no] :");
+            userIsDone = Console.ReadLine();
+        } while (userIsDone.ToLower() != "yes");
     }
 }

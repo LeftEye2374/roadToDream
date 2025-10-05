@@ -14,6 +14,8 @@ class Program
         WhileLoopEaxample();
         Console.WriteLine("______________________________________");
         DoWhileLoopExample();
+        Console.WriteLine("______________________________________");
+        TernarOperation();
     }
 
     static void ForLoopExample()
@@ -65,5 +67,14 @@ class Program
             Console.Write("Are you done? [yes] [no] :");
             userIsDone = Console.ReadLine();
         } while (userIsDone.ToLower() != "yes");
+    }
+
+    static void TernarOperation()
+    {
+        string stringData = "My text data";
+        int i = stringData.Length;
+        Console.WriteLine(i > 0
+            ? "string is greater than 0 characters" : "string is greater than not 0 characters");
+        Console.WriteLine();
     }
 }

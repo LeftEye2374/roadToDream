@@ -6,8 +6,12 @@ class Program
     static void Main(String[] args)
     {
         ForLoopExample();
+        Console.WriteLine("______________________________________");
         ForEachLoopExample();
+        Console.WriteLine("______________________________________");
         LinkqQueryOverInts();
+        Console.WriteLine("______________________________________");
+        WhileLoopEaxample();
     }
 
     static void ForLoopExample()
@@ -34,6 +38,17 @@ class Program
         foreach (var i in subset)
         {
             Console.WriteLine("{0}", i);
+        }
+    }
+
+    static void WhileLoopEaxample()
+    {
+        string userIsDone = "";
+        while(userIsDone.ToLower() != "yes")
+        {
+            Console.WriteLine("In while loop");
+            Console.Write("Are you done? [yes] [no] :");
+            userIsDone = Console.ReadLine();
         }
     }
 }

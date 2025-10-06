@@ -16,6 +16,8 @@ class Program
         DoWhileLoopExample();
         Console.WriteLine("______________________________________");
         TernarOperation();
+        Console.WriteLine("______________________________________");
+        SwitchExample();
     }
 
     static void ForLoopExample()
@@ -76,5 +78,25 @@ class Program
         Console.WriteLine(i > 0
             ? "string is greater than 0 characters" : "string is greater than not 0 characters");
         Console.WriteLine();
+    }
+
+    static void SwitchExample()
+    {
+        Console.WriteLine("1 [c#], 2 [VB]");
+        Console.WriteLine("Please pick your language preference:");
+        string langChoice = Console.ReadLine();
+        int n = int.Parse(langChoice);
+        switch (n)
+        {
+            case 1:
+                Console.WriteLine("Good choice c#. C# is a fine language");
+                break;
+            case 2:
+                Console.WriteLine("Good choice VB. VB is a fine language");
+                break;
+            default:
+                Console.WriteLine("Well. Good luck");
+                break;
+        }
     }
 }

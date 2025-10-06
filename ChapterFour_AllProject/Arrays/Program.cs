@@ -9,6 +9,8 @@ class Program
         SimpleArray();
         Console.WriteLine("___________________________");
         ArrayInit();
+        Console.WriteLine("___________________________");
+        DeclareImplicitArrays();
     }
 
     static void SimpleArray()
@@ -35,5 +37,12 @@ class Program
         {
             Console.WriteLine(i);
         }
+    }
+
+    static void DeclareImplicitArrays()
+    {
+        Console.WriteLine("=> Implicit Array inicialization");
+        var a = new[] { 1, 2, 3, 4 };
+        Console.WriteLine("a is - {0}", a.ToString);
     }
 }

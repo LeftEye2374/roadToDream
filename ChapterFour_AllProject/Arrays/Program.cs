@@ -11,6 +11,8 @@ class Program
         ArrayInit();
         Console.WriteLine("___________________________");
         DeclareImplicitArrays();
+        Console.WriteLine("___________________________");
+        ArraysOfObject();
     }
 
     static void SimpleArray()
@@ -44,5 +46,19 @@ class Program
         Console.WriteLine("=> Implicit Array inicialization");
         var a = new[] { 1, 2, 3, 4 };
         Console.WriteLine("a is - {0}", a.ToString);
+    }
+
+    static void ArraysOfObject()
+    {
+        object[] myObjects = new object[4];
+        myObjects[0] = 1;
+        myObjects[1] = "string";
+        myObjects[2] = 2.14;
+        myObjects[3] = true;
+
+        foreach(object o in myObjects)
+        {
+            Console.WriteLine(o);
+        }
     }
 }

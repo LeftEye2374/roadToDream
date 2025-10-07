@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodConsoleApp", "MethodConsoleApp\MethodConsoleApp.csproj", "{FABB94CA-6730-4451-9104-6D1079674D45}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithMethods", "FunWithMethods\FunWithMethods.csproj", "{96DC7693-CA71-402F-9D4A-D1937F6F1DFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +54,18 @@ Global
 		{FABB94CA-6730-4451-9104-6D1079674D45}.Release|x64.Build.0 = Release|Any CPU
 		{FABB94CA-6730-4451-9104-6D1079674D45}.Release|x86.ActiveCfg = Release|Any CPU
 		{FABB94CA-6730-4451-9104-6D1079674D45}.Release|x86.Build.0 = Release|Any CPU
+		{96DC7693-CA71-402F-9D4A-D1937F6F1DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96DC7693-CA71-402F-9D4A-D1937F6F1DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96DC7693-CA71-402F-9D4A-D1937F6F1DFE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{96DC7693-CA71-402F-9D4A-D1937F6F1DFE}.Debug|x64.Build.0 = Debug|Any CPU
+		{96DC7693-CA71-402F-9D4A-D1937F6F1DFE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{96DC7693-CA71-402F-9D4A-D1937F6F1DFE}.Debug|x86.Build.0 = Debug|Any CPU
+		{96DC7693-CA71-402F-9D4A-D1937F6F1DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96DC7693-CA71-402F-9D4A-D1937F6F1DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96DC7693-CA71-402F-9D4A-D1937F6F1DFE}.Release|x64.ActiveCfg = Release|Any CPU
+		{96DC7693-CA71-402F-9D4A-D1937F6F1DFE}.Release|x64.Build.0 = Release|Any CPU
+		{96DC7693-CA71-402F-9D4A-D1937F6F1DFE}.Release|x86.ActiveCfg = Release|Any CPU
+		{96DC7693-CA71-402F-9D4A-D1937F6F1DFE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

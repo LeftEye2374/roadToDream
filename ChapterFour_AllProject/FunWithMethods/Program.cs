@@ -8,6 +8,8 @@
         int ans;
         AddUsingOutParam(90, 90 , out ans);
         Console.ReadLine();
+        Console.WriteLine("___________________________________");
+        ThisNotCompile(out _);
     }
 
     static int Add(int x, int y)

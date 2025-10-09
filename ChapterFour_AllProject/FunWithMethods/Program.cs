@@ -15,6 +15,10 @@
         SwapStrings(ref s1, ref s2);
         Console.WriteLine("After {0}, {1}", s1, s2);
         Console.ReadLine();
+        Console.WriteLine("___________________________________");
+        Console.WriteLine(AddOnlyRead(123123, 123123123));
+        Console.ReadLine();
+
     }
 
     static int Add(int x, int y)
@@ -37,6 +41,16 @@
         string tempStr = s1;
         s1 = s2;
         s2 = tempStr;
+    }
+
+    static int AddOnlyRead(in int num1, in int num2)
+    {
+        //num1 = 12312312;
+        //num2 = 12312412454124;
+        //int ans = num1 + num2;
+        //return ans;
+        int ans = num1 + num2;
+        return ans;
     }
 
 

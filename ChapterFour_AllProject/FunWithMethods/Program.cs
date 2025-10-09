@@ -31,6 +31,14 @@
         Console.WriteLine("Average of data is: {0}", average);
         Console.WriteLine("Average of data is: {0}", CalculateAverage());
         Console.ReadLine();
+        Console.WriteLine("___________________________________");
+
+        DisplayFancyMesssage(message:"Wow! Very Fancy indeed!",
+            textColor: ConsoleColor.DarkRed, backGroundColor: ConsoleColor.White);
+        DisplayFancyMesssage(backGroundColor: ConsoleColor.Green,
+                        message: "Testing...",
+                                textColor: ConsoleColor.DarkBlue);
+        Console.ReadLine();
     }
 
     static int Add(int x, int y)
@@ -78,6 +86,22 @@
             sum += values[i];
         }
         return (sum / values.Length);
+    }
 
+    static void DisplayFancyMesssage(ConsoleColor textColor, 
+        ConsoleColor backGroundColor, string message)
+    {
+        //Сохранить старые цвета для их восстановления после вывода сообщения
+        ConsoleColor oldTextColor = textColor;
+        ConsoleColor oldBackGroundColor = backGroundColor;
+
+        // Установить новые цвета и вывести сообщение.
+        Console.ForegroundColor = textColor;
+        Console.BackgroundColor = backGroundColor;
+        Console.WriteLine(message);
+
+        // Восстановить предыдущие цвета.
+        Console.ForegroundColor = oldTextColor;
+        Console.BackgroundColor = oldBackGroundColor;
     }
 }

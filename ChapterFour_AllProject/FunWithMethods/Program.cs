@@ -13,4 +13,11 @@
         y = 5000;
         return ans;
     }
+
+    // Значения выходных параметров должны быть
+    // установлены внутри вызываемого метода.
+    static void AddUsingOutParam(int x, int y, out int ans)
+    {
+        ans = x + y;
+    }
 }

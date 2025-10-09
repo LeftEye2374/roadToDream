@@ -18,6 +18,7 @@
         Console.WriteLine("___________________________________");
         Console.WriteLine(AddOnlyRead(123123, 123123123));
         Console.ReadLine();
+        Console.WriteLine("___________________________________");
 
     }
 
@@ -53,5 +54,19 @@
         return ans;
     }
 
+    static double CalculateAverage(params double[] values)
+    {
+        Console.WriteLine("You sent me: {0} doubles", values.Length);
+        double sum =0;
+        if(values.Length == 0)
+        {
+            return sum;
+        }
+        for(int i =0; i < values.Length; i++)
+        {
+            sum += values[i];
+        }
+        return (sum / values.Length);
 
+    }
 }

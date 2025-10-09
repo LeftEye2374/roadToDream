@@ -6,15 +6,20 @@
         Console.ReadLine();
         Console.WriteLine("___________________________________");
         int ans;
-        AddUsingOutParam(90, 90 , out ans);
+        AddUsingOutParam(90, 90, out ans);
         Console.ReadLine();
         Console.WriteLine("___________________________________");
-        ThisNotCompile(out _);
+        string s1 = "Flip";
+        string s2 = "Flop";
+        Console.WriteLine("Before {0} , {1}", s1, s2);
+        SwapStrings(ref s1, ref s2);
+        Console.WriteLine("After {0}, {1}", s1, s2);
+        Console.ReadLine();
     }
 
     static int Add(int x, int y)
     {
-        int ans =  x + y;
+        int ans = x + y;
         x = 10000;
         y = 5000;
         return ans;
@@ -27,9 +32,12 @@
         ans = x + y;
     }
 
-    static void ThisNotCompile(out int a)
+    static void SwapStrings(ref string s1, ref string s2)
     {
-        Console.WriteLine("Error! Forgot to assign output arg!");
-        // Ошибка! Забыли присвоить значение выходному параметру!
+        string tempStr = s1;
+        s1 = s2;
+        s2 = tempStr;
     }
+
+
 }

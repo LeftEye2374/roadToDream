@@ -4,8 +4,12 @@
     {
         Console.WriteLine(Add(1, 2));
         Console.ReadLine();
+        Console.WriteLine("___________________________________");
+        int ans;
+        AddUsingOutParam(90, 90 , out ans);
+        Console.ReadLine();
     }
-    
+
     static int Add(int x, int y)
     {
         int ans =  x + y;

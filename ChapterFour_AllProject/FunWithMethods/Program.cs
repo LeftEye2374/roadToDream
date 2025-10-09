@@ -24,4 +24,10 @@
     {
         ans = x + y;
     }
+
+    static void ThisNotCompile(out int a)
+    {
+        Console.WriteLine("Error! Forgot to assign output arg!");
+        // Ошибка! Забыли присвоить значение выходному параметру!
+    }
 }

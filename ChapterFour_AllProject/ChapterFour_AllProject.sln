@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FunWithMethodOverLoading", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithMethodOverloading", "FunWithMethodOverLoading\FunWithMethodOverloading.csproj", "{C3C27468-11B2-4385-80DC-EF15EF5159C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithEnum", "FunWithEnum\FunWithEnum.csproj", "{AAB47C45-1CEF-4712-8EDA-80E694892D55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -82,6 +84,18 @@ Global
 		{C3C27468-11B2-4385-80DC-EF15EF5159C7}.Release|x64.Build.0 = Release|Any CPU
 		{C3C27468-11B2-4385-80DC-EF15EF5159C7}.Release|x86.ActiveCfg = Release|Any CPU
 		{C3C27468-11B2-4385-80DC-EF15EF5159C7}.Release|x86.Build.0 = Release|Any CPU
+		{AAB47C45-1CEF-4712-8EDA-80E694892D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB47C45-1CEF-4712-8EDA-80E694892D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB47C45-1CEF-4712-8EDA-80E694892D55}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AAB47C45-1CEF-4712-8EDA-80E694892D55}.Debug|x64.Build.0 = Debug|Any CPU
+		{AAB47C45-1CEF-4712-8EDA-80E694892D55}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AAB47C45-1CEF-4712-8EDA-80E694892D55}.Debug|x86.Build.0 = Debug|Any CPU
+		{AAB47C45-1CEF-4712-8EDA-80E694892D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB47C45-1CEF-4712-8EDA-80E694892D55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB47C45-1CEF-4712-8EDA-80E694892D55}.Release|x64.ActiveCfg = Release|Any CPU
+		{AAB47C45-1CEF-4712-8EDA-80E694892D55}.Release|x64.Build.0 = Release|Any CPU
+		{AAB47C45-1CEF-4712-8EDA-80E694892D55}.Release|x86.ActiveCfg = Release|Any CPU
+		{AAB47C45-1CEF-4712-8EDA-80E694892D55}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

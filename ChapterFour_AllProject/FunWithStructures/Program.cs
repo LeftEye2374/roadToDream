@@ -11,7 +11,13 @@ Console.WriteLine("_____________________");
 
 myPoint.decrement();
 myPoint.display();
+
+Console.WriteLine("_____________________");
+
+Point p2 = new Point(102, 304);
+p2.display();
 Console.ReadLine();
+
 
 
 
@@ -19,6 +25,12 @@ struct Point
 {
     public int X;
     public int Y;
+
+    public Point(int xPos, int yPos)
+    {
+        X = xPos;
+        Y = yPos;
+    }
 
     public void increment()
     {

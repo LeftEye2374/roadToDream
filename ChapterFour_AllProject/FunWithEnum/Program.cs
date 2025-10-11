@@ -11,6 +11,10 @@ class Program {
     }
 
 
+   
+   
+   
+   
 enum EmpTypeEnum : byte
     {
         Manager = 102,

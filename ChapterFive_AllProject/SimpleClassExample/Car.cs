@@ -5,6 +5,14 @@ public class Car
     public string petName;
     public int currSpeed;
 
+    public Car(string petName, int currSpeed)
+    {
+        this.petName = petName;
+        this.currSpeed = currSpeed;
+    }
+
+    public Car(){}
+    
     public void SpeedUp(int delta)
     {
         currSpeed += delta;

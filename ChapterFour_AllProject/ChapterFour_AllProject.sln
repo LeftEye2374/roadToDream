@@ -8,8 +8,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodConsoleApp", "MethodC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithMethods", "FunWithMethods\FunWithMethods.csproj", "{96DC7693-CA71-402F-9D4A-D1937F6F1DFE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FunWithMethodOverLoading", "FunWithMethodOverLoading", "{1D3DA167-72A2-4957-22FF-2962DD18AC91}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithMethodOverloading", "FunWithMethodOverLoading\FunWithMethodOverloading.csproj", "{C3C27468-11B2-4385-80DC-EF15EF5159C7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithEnum", "FunWithEnum\FunWithEnum.csproj", "{AAB47C45-1CEF-4712-8EDA-80E694892D55}"
@@ -129,6 +127,5 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{C3C27468-11B2-4385-80DC-EF15EF5159C7} = {1D3DA167-72A2-4957-22FF-2962DD18AC91}
 	EndGlobalSection
 EndGlobal

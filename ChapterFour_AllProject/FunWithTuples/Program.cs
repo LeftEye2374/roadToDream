@@ -1,6 +1,10 @@
-﻿(string , int , string) tup1 = ("abc", 15, "hui");
-var tup2 = ("abc", 15, "hui");
-
-Console.WriteLine(tup1);
-Console.WriteLine("____________");
-Console.WriteLine(tup2);
+﻿class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Fun with Tuples");
+        var foo = new (Prop1 = "first", Prop2 = "second");
+        var bar = (foo.Prop1, foo.Prop2);
+        Console.WriteLine($"{bar.Prop1}, {bar.Prop2}");
+    }
+}

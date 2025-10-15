@@ -12,4 +12,9 @@ public class SavaingsAccount
 		currBalance = balance;
 	}
 
+	public static void SetInterestRate(double newRate) => currInterestRate = newRate;
+
+	public static double GetInterestRate() => currInterestRate;
+	
+
 }

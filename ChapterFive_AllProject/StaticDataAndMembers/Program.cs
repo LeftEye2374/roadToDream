@@ -3,7 +3,7 @@
 using StaticDataAndMembers;
 
 Console.WriteLine("Fun with statuic data");
-SavingsAccount s1 = new SavingsAccount(50);
-SavingsAccount s2 = new SavingsAccount(1000);
-SavingsAccount s3 = new SavingsAccount(900.4);
+SavaingsAccount s1 = new SavaingsAccount(50);
+SavaingsAccount s2 = new SavaingsAccount(1000);
+SavaingsAccount s3 = new SavaingsAccount(900.4);
 Console.ReadLine();

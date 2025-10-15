@@ -2,12 +2,12 @@ using System;
 
 namespace StaticDataAndMembers;
 
-class SavaingAccount
+public class SavaingsAccount
 {
 	public static double currInterestRate = 0.04;
 	public double currBalance;
 
-	public SavaingAccount(double balance)
+	public SavaingsAccount(double balance)
 	{
 		currBalance = balance;
 	}

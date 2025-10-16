@@ -8,6 +8,7 @@ class Program
         Book book = new Book();
         Console.WriteLine(book);
         Console.WriteLine("_____________");
-        
+        Book microBook = new Book(121);
+        Console.WriteLine(microBook.numberOfPages);
     }
 }

@@ -12,4 +12,14 @@ public class Car
         Console.WriteLine("Car speed: {0}", Speed);
         Console.WriteLine("Car color: {0}", Color);
     }
+
+    public Car(string PenNameVal, int PenSpeedVal, string PenColorVal)
+    {
+        PetName = PenNameVal;
+        Speed = PenSpeedVal;
+        Color = PenColorVal;
+    }
+    
+    public Car(){}
+    
 }

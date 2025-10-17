@@ -10,5 +10,11 @@ class Program
         Console.WriteLine("_____________");
         Book microBook = new Book(121);
         Console.WriteLine(microBook.numberOfPages);
+        Console.WriteLine("_____________");
+        Book setBook = new Book(123);
+        Console.WriteLine(setBook.GetNumberOfPages());
+        setBook.SetNumberOfPages(543);
+        Console.WriteLine(setBook.GetNumberOfPages());
+        Console.ReadLine();
     }
 }

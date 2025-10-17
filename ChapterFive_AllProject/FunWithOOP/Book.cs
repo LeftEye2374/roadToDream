@@ -10,4 +10,15 @@ public class Book
     {
         this.numberOfPages = numberOfPages;
     }
+
+
+    public int GetNumberOfPages()
+    {
+        return numberOfPages;
+    }
+
+    public void SetNumberOfPages(int NewNumberOfPages)
+    {
+        numberOfPages = NewNumberOfPages;   
+    }
 }

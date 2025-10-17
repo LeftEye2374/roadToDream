@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithOOP", "FunWithOOP\Fu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Incapsul", ".Incapsul\Incapsul.csproj", "{17689CD7-BF72-4400-AC0D-61E867953045}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoProps", ".AutoProps\AutoProps.csproj", "{A97FC1CD-F3D7-4E7E-B32F-49190AB5AFC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,18 @@ Global
 		{17689CD7-BF72-4400-AC0D-61E867953045}.Release|x64.Build.0 = Release|Any CPU
 		{17689CD7-BF72-4400-AC0D-61E867953045}.Release|x86.ActiveCfg = Release|Any CPU
 		{17689CD7-BF72-4400-AC0D-61E867953045}.Release|x86.Build.0 = Release|Any CPU
+		{A97FC1CD-F3D7-4E7E-B32F-49190AB5AFC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A97FC1CD-F3D7-4E7E-B32F-49190AB5AFC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A97FC1CD-F3D7-4E7E-B32F-49190AB5AFC1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A97FC1CD-F3D7-4E7E-B32F-49190AB5AFC1}.Debug|x64.Build.0 = Debug|Any CPU
+		{A97FC1CD-F3D7-4E7E-B32F-49190AB5AFC1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A97FC1CD-F3D7-4E7E-B32F-49190AB5AFC1}.Debug|x86.Build.0 = Debug|Any CPU
+		{A97FC1CD-F3D7-4E7E-B32F-49190AB5AFC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A97FC1CD-F3D7-4E7E-B32F-49190AB5AFC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A97FC1CD-F3D7-4E7E-B32F-49190AB5AFC1}.Release|x64.ActiveCfg = Release|Any CPU
+		{A97FC1CD-F3D7-4E7E-B32F-49190AB5AFC1}.Release|x64.Build.0 = Release|Any CPU
+		{A97FC1CD-F3D7-4E7E-B32F-49190AB5AFC1}.Release|x86.ActiveCfg = Release|Any CPU
+		{A97FC1CD-F3D7-4E7E-B32F-49190AB5AFC1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

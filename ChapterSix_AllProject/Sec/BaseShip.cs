@@ -11,6 +11,11 @@ public class BaseShip
         string result = string.Format("Пройдено километров - {0}", distance);
         return result;
     }
+
+    public override string ToString()
+    {
+        return "Poshel nahui";
+    }
 }
 
 public class TransportShip : BaseShip

@@ -8,6 +8,7 @@ class Program
         BaseShip baseShip = new TransportShip();
         string res = baseShip.Move(12);
         Console.WriteLine(res);
+        Console.WriteLine(baseShip.ToString());
         Console.ReadLine();
     }
 }

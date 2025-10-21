@@ -1,2 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Base;
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+
+        TransportShip ship = new TransportShip();
+        string rs = ship.Move(214);
+        Console.WriteLine(rs);
+        Console.ReadLine();
+    }
+}

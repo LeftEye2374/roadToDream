@@ -24,7 +24,7 @@ namespace SimpleException
         private readonly Radio _theMusicBox = new Radio();
 
         public Car() { }
-        public Car(string name, int speed) 
+        public Car(string name, int speed)
         {
             CurrentSpeed = speed;
             PetName = name;
@@ -56,4 +56,5 @@ namespace SimpleException
                 }
             }
         }
+    }
 }

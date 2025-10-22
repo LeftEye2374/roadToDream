@@ -37,23 +37,22 @@ namespace SimpleException
 
         public void Accelerate(int delta)
         {
+            
             if (_carIsDead)
             {
-                Console.WriteLine("{0} is out of order ...", PetName);
+                Console.WriteLine("{0} is out of order...", PetName);
             }
             else
             {
                 CurrentSpeed += delta;
-                if (CurrentSpeed > MaxSpeed)
+                if (CurrentSpeed >= MaxSpeed)
                 {
-                    Console.WriteLine("{0} has overheated!", PetName);
                     CurrentSpeed = 0;
                     _carIsDead = true;
+
+                    throw new Exception($"{PetName} has overheated");
                 }
-                else
-                {
-                    Console.WriteLine("=> CurrentSpedd = {0} ", CurrentSpeed);
-                }
+                Console.WriteLine("=> current speed = {0}", CurrentSpeed);
             }
         }
     }

@@ -50,7 +50,11 @@ namespace SimpleException
                     _carIsDead = true;
                     throw new Exception($"{PetName} has overheated!")
                     {
-                        HelpLink = "www.CarPlus.ru"
+                        HelpLink = "www.CarPlus.ru",
+                        Data = {
+                            {   "TimeStamp", $"The car exploaded at {DateTime.Now}"},
+                            {   "Cause", "You have a lead foot." }
+                        }
                     };
                 }
                 Console.WriteLine("Current speed = {0}", CurrentSpeed);

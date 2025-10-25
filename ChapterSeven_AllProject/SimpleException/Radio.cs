@@ -9,6 +9,8 @@ namespace SimpleException
             Console.WriteLine(on ? "Jamming ..." : "Quite time..");
         }
     }
+    
+    
     class Car
     {
         public const int MaxSpeed = 100;

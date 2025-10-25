@@ -9,8 +9,6 @@ namespace SimpleException
             Console.WriteLine(on ? "Jamming ..." : "Quite time..");
         }
     }
-
-
     class Car
     {
         public const int MaxSpeed = 100;
@@ -18,7 +16,7 @@ namespace SimpleException
         public int CurrentSpeed { get; set; } = 0;
         public string PetName { get; set; } = "";
 
-        // ”казывает не вышел ли автомобиль из стро€?
+        // ????????? ?? ????? ?? ?????????? ?? ??????
         private bool _carIsDead;
 
         private readonly Radio _theMusicBox = new Radio();

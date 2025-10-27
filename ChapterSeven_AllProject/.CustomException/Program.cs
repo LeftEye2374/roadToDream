@@ -6,6 +6,9 @@ Car myCar = new Car();
 try
 {
     myCar.Accelerate(50);
+
+
+
 }
 catch (CarIsDeadException ex)
 {

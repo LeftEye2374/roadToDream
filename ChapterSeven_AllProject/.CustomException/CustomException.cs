@@ -9,15 +9,17 @@ namespace CustomException
     {
         private string _messageDetails = String.Empty;
         public DateTime ErrorTimeStamp { get; set; }
-        public string CauseOfException { get; set; }
+        public string CauseOfError { get; set; }
 
-        public CarIsDeadException(string message, string cause, DateTime timeStamp)
+        public CarIsDeadException() { }
+
+        public CarIsDeadException(string cause, DateTime time, string message ) : this(cause, time, time, message, String.Empty)
+        { }
+
+        public CarIsDeadException(string cause, DateTime time , string message, System.Exception inner) : base(message, inner)
         {
-            _messageDetails = message;
-            CauseOfException = cause;
-            ErrorTimeStamp = timeStamp;
+            CauseOfError = cause;
+            ErrorTimeStamp = time;
         }
-        
-        public override string Message => $"Car Error: {_messageDetails}";
     }
 }

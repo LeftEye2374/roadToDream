@@ -3,7 +3,7 @@ namespace CustomException
     public class CustomException : ApplicationException
     {
 
-    }
+    } 
 
     public class CarIsDeadException : ApplicationException
     {

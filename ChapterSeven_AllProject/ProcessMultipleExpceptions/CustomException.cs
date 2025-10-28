@@ -2,7 +2,7 @@ namespace CustomException
 {
     public class CustomException : ApplicationException
     {
-        
+
     }
 
     public class CarIsDeadException : ApplicationException
@@ -13,12 +13,12 @@ namespace CustomException
 
         public CarIsDeadException() { }
 
-        public CarIsDeadException(string cause, DateTime time) : this (cause,time,String.Empty) { }
+        public CarIsDeadException(string cause, DateTime time) : this(cause, time, String.Empty) { }
 
-        public CarIsDeadException(string cause, DateTime time, string message ) : this (cause, time, message, null)
+        public CarIsDeadException(string cause, DateTime time, string message) : this(cause, time, message, null)
         { }
 
-        public CarIsDeadException(string cause, DateTime time , string message, System.Exception inner) : base(message, inner)
+        public CarIsDeadException(string cause, DateTime time, string message, System.Exception inner) : base(message, inner)
         {
             CauseOfError = cause;
             ErrorTimeStamp = time;

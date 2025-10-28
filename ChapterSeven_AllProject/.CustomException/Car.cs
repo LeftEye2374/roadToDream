@@ -36,7 +36,7 @@ public class Car
             {
                 CurrentSpeed = 0;
                 _carIsDead = true;
-                throw new CarIsDeadException($"{PetName} has overheated!", "You have a lead foot", DateTime.Now)
+                throw new CarIsDeadException("You have a lead foot", DateTime.Now, $"{PetName} has overtheated")
                 {
                     HelpLink = "www.CarPlus.ru",
                 };

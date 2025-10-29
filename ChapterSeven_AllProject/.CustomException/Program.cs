@@ -10,7 +10,7 @@ try
 catch (CarIsDeadException ex)
 {
     Console.WriteLine(ex.Message);
-    Console.WriteLine(ex.CauseOfException);
-    Console.WriteLine(ex.CauseOfException);
+    Console.WriteLine(ex);
+    Console.WriteLine(ex);
 }
 Console.ReadLine();

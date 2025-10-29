@@ -1,9 +1,11 @@
-namespace CustomException;
-
-public class Radio
+namespace CustomException
 {
-    public void TurnOn(bool on)
+
+    public class Radio
     {
-        Console.WriteLine(on ? "Jamming ..." : "Quite time..");
+        public void TurnOn(bool on)
+        {
+            Console.WriteLine(on ? "Jamming ..." : "Quite time..");
+        }
     }
 }

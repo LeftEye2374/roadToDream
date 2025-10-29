@@ -1,4 +1,4 @@
-namespace CustomException
+ namespace CustomException
 {
     public class CustomException : ApplicationException
     {

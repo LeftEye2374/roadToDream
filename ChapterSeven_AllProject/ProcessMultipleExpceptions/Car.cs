@@ -1,52 +1,54 @@
-namespace CustomException;
-
-public class Car
+namespace CustomException
 {
-    public const int MaxSpeed = 100;
 
-    public int CurrentSpeed { get; set; } = 0;
-    public string PetName { get; set; } = "";
-
-    private bool _carIsDead;
-
-    private readonly Radio _theMusicBox = new Radio();
-
-    public Car() { }
-    public Car(string name, int speed)
+    public class Car
     {
-        CurrentSpeed = speed;
-        PetName = name;
-    }
+        public const int MaxSpeed = 100;
 
-    public void CruncTunes(bool State)
-    {
-        _theMusicBox.TurnOn(State);
-    }
+        public int CurrentSpeed { get; set; } = 0;
+        public string PetName { get; set; } = "";
 
-    public void Accelerate(int delta)
-    {
-        if (delta < 0)
+        private bool _carIsDead;
+
+        private readonly Radio _theMusicBox = new Radio();
+
+        public Car() { }
+        public Car(string name, int speed)
         {
-            throw new ArgumentOutOfRangeException(nameof(delta), "Speed must be greater than zero");
-            // Значение скорости должно быть больше нуля
+            CurrentSpeed = speed;
+            PetName = name;
         }
-        if (_carIsDead)
+
+        public void CruncTunes(bool State)
         {
-            Console.WriteLine("{0} is out of order...", PetName);
+            _theMusicBox.TurnOn(State);
         }
-        else
+
+        public void Accelerate(int delta)
         {
-            CurrentSpeed += delta;
-            if (CurrentSpeed > MaxSpeed)
+            if (delta < 0)
             {
-                CurrentSpeed = 0;
-                _carIsDead = true;
-                throw new CarIsDeadException("You have a lead foot", DateTime.Now, $"{PetName} has overtheated")
-                {
-                    HelpLink = "www.CarPlus.ru",
-                };
+                throw new ArgumentOutOfRangeException(nameof(delta), "Speed must be greater than zero");
+                // Значение скорости должно быть больше нуля
             }
-            Console.WriteLine("Current speed = {0}", CurrentSpeed);
+            if (_carIsDead)
+            {
+                Console.WriteLine("{0} is out of order...", PetName);
+            }
+            else
+            {
+                CurrentSpeed += delta;
+                if (CurrentSpeed > MaxSpeed)
+                {
+                    CurrentSpeed = 0;
+                    _carIsDead = true;
+                    throw new CarIsDeadException("You have a lead foot", DateTime.Now, $"{PetName} has overtheated")
+                    {
+                        HelpLink = "www.CarPlus.ru",
+                    };
+                }
+                Console.WriteLine("Current speed = {0}", CurrentSpeed);
+            }
         }
     }
 }

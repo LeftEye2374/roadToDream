@@ -10,7 +10,10 @@ try
 }
 catch (CarIsDeadException e)
 {
-    Console.WriteLine(e.Message);
+    when (e.ErrorTimeStamp.DayOfWeek != DayOfWeek.Friday){
+        Console.WriteLine("Cathcing car is dead");
+        Console.WriteLine(e.Message);
+    }
 }
 catch (ArgumentOutOfRangeException e)
 {

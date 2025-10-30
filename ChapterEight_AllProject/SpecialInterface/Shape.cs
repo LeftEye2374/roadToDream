@@ -20,6 +20,10 @@ namespace Shape
         public Circle() { }
 
         public Circle(string name) : base(name){ }
+        public override void Draw()
+        {
+            Console.WriteLine("Drawing {0} the Circle", PetName);
+        }
     }
 
     class Hexagon : Shape
@@ -30,6 +34,16 @@ namespace Shape
         public override void Draw() 
         {
             Console.WriteLine("Drawing {0} the Hexagon", PetName);
+        }
+    }
+
+    class ThreeDCircle() : Circle
+    {
+        public new string PetName { get; set; }
+
+        public new void Draw() 
+        {
+            Console.WriteLine("Drawing 3D Circle");
         }
     }
 }

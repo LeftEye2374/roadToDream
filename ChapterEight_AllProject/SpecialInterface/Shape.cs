@@ -1,5 +1,11 @@
-namespace Shape
+namespace CustomInterfaces
 {
+
+    public interface IPointy
+    {
+        byte getNumberOfPoints();
+    }
+
      abstract class Shape
     {
         protected Shape(string name = "NoName") 

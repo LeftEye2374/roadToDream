@@ -35,7 +35,7 @@ namespace CustomInterfaces
         }
     }
 
-    class Hexagon : Shape
+    class Hexagon : Shape, IPointy
     {
         public Hexagon() { }
         public Hexagon(string name) : base(name) { }
@@ -44,6 +44,21 @@ namespace CustomInterfaces
         {
             Console.WriteLine("Drawing {0} the Hexagon", PetName);
         }
+
+        public byte Points => 0;
+    }
+
+    class Triangle: Shape, IPointy
+    {
+        public Triangle() { }
+        public Triangle(string name) : base(name) { }
+        public override void Draw()
+        {
+            Console.WriteLine("Drawing {0} the Triangle", PetName);
+        }
+
+        public byte Points => 3;
+
     }
 
     class ThreeDCircle() : Circle

@@ -6,6 +6,14 @@ namespace CustomInterfaces
         byte Points { get; }
     }
 
+    interface IRegularPointy : IPointy
+    {
+        int SideLenght { get; set; }
+        int NumberOfSides {  get; set; }
+
+        int Perimetr => SideLenght * NumberOfSides;
+    }
+
      abstract class Shape
     {
         protected Shape(string name = "NoName") 

@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using CustomInterfaces;
+using System;
+
+Console.WriteLine("Fun with interfaces");
+Hexagon hex = new Hexagon();
+Console.WriteLine("Points of hexagon: {0}", hex.Points);
+Console.ReadLine();

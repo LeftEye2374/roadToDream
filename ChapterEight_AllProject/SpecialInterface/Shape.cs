@@ -93,7 +93,7 @@ namespace CustomInterfaces
         }
     }
 
-    public class Fork() : Utensil, IPointy
+    public class Fork() : IPointy
     {
         public byte Points => throw new NotImplementedException();
     }

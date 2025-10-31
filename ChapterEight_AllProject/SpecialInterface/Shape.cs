@@ -3,7 +3,7 @@ namespace CustomInterfaces
 
     public interface IPointy
     {
-        byte getNumberOfPoints();
+        byte Points { get; }
     }
 
      abstract class Shape
@@ -54,5 +54,32 @@ namespace CustomInterfaces
         {
             Console.WriteLine("Drawing 3D Circle");
         }
+    }
+
+    // ___________________________________________________________
+
+    public class Pencil() : IPointy
+    {
+        public byte Points => throw new NotImplementedException();
+    }
+
+    public class Switchblade() : Object, IPointy
+    {
+        public byte Points => throw new NotImplementedException();
+    }
+
+    public class PitchFork() : ICloneable, IPointy
+    {
+        public byte Points => throw new NotImplementedException();
+
+        public object Clone()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class Fork() : Utensil, IPointy
+    {
+        public byte Points => throw new NotImplementedException();
     }
 }

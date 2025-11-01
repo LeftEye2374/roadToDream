@@ -1,9 +1,5 @@
 namespace CustomInterfaces
 {
-
-
-
-
     class Square : Shape, IRegularPointy
     {
         public Square() { }

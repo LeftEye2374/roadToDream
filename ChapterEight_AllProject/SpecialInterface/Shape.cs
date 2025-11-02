@@ -15,8 +15,6 @@ namespace CustomInterfaces
 
         static string ExampleProperty { get; set; }
         static IRegularPointy() => ExampleProperty = "Foo"; 
-
-
     }
 
      abstract class Shape

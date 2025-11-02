@@ -12,6 +12,9 @@ namespace CustomInterfaces
         int NumberOfSides {  get; set; }
 
         int Perimetr => SideLenght * NumberOfSides;
+
+        static string ExampleProperty { get; set; }
+        static IRegularPointy() => ExampleProperty = "Foo"; 
     }
 
      abstract class Shape

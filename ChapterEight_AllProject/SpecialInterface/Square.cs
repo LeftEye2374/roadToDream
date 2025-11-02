@@ -1,6 +1,6 @@
 namespace CustomInterfaces
 {
-    class Square : Shape, IRegularPointy
+     class Square : Shape, IRegularPointy
     {
         public Square() { }
         public Square(string name) : base(name) { }

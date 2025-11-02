@@ -24,9 +24,6 @@ namespace CustomInterfaces
             PetName = name;
         }
 
-
-
-
         public string PetName { get; set; }
 
         public virtual void Draw()

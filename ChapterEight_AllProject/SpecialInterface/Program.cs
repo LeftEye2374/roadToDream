@@ -36,7 +36,13 @@ else
 }
 
 Console.WriteLine("___________________________");
+
 var sq = new Square("Boxy")
     { NumberOfSides = 4, SideLenght = 4};
 sq.Draw();
 Console.WriteLine($"{sq.PetName} has {sq.NumberOfSides} of length {sq.SideLenght} and a perimetr of {((IRegularPointy)sq).Perimetr}");
+
+Console.WriteLine("___________________________");
+Console.WriteLine($"Example property: {IRegularPointy.ExampleProperty}");
+IRegularPointy.ExampleProperty = "Updated";
+Console.WriteLine($"Example property: {IRegularPointy.ExampleProperty}");

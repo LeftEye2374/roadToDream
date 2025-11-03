@@ -1,14 +1,10 @@
-﻿using System;
-using SimpleGS;
+﻿using SimpleGC;
+using System;
 
-Console.WriteLine("GS basic");
-Car refToMyCar = new Car("Zippy",50);
+Console.WriteLine("Fun with System.GS");
+Console.WriteLine("Estimated bytes on heap: {0}", GC.GetTotalMemory(false));
+Console.WriteLine("This OS has {0} object generations. \n", (GC.MaxGeneration + 1));
+Car refToMyCar = new Car("Zippy", 100);
 Console.WriteLine(refToMyCar.ToString());
+Console.WriteLine("Generation of refToMyCar is: {0}", GC.GetGeneration(refToMyCar));
 Console.ReadLine();
-
-
-static void MakeACar()
-{
-    Car myCar = new Car();
-    myCar = null;
-}

@@ -1,4 +1,4 @@
-namespace SimpleGS
+namespace SimpleGC
 {
     public class Car
     {

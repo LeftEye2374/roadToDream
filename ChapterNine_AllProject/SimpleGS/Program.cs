@@ -1,30 +1,21 @@
-﻿using SimpleGC;
-using System;
+﻿using System;
+using SimpleFinalizer;
 
-Console.WriteLine("Fun with System.GS");
-Console.WriteLine("Estimated bytes on heap: {0}", GC.GetTotalMemory(false));
-Console.WriteLine("This OS has {0} object generations. \n", (GC.MaxGeneration + 1));
-Car refToMyCar = new Car("Zippy", 100);
-Console.WriteLine(refToMyCar.ToString());
-Console.WriteLine("G\n Generation of the refToMyCar is: {0}", GC.GetGeneration(refToMyCar));
-object[] tonsOfObjects = new object[50000];
-for (int i = 0; i < 50000; i++)
-{
-    tonsOfObjects[i] = new object();
-}
-Console.WriteLine("Force Garbage collector");
+Console.WriteLine("Fun with Finalizers");
+Console.WriteLine("Hit return to create the objects");
+Console.WriteLine("Then force the GC to invoke Finalizer");
+CreateObjects(1_000_000);
+GC.AddMemoryPressure(2147483647);
 GC.Collect(0, GCCollectionMode.Forced);
 GC.WaitForPendingFinalizers();
-Console.WriteLine("Generation of the refToMyCar is: {0}", GC.GetGeneration(refToMyCar));
-if(tonsOfObjects[9000] != null)
-{
-    Console.WriteLine("Generation of the tonsOfObject[9000] is: {0}", GC.GetGeneration(tonsOfObjects[9000]));
-}
-else
-{
-    Console.WriteLine("tonsOfObject[9000] is no longer alive");
-}
-Console.WriteLine("\n Gen 0 has been swept {0} times", GC.CollectionCount(0));
-Console.WriteLine("\n Gen 1 has been swept {0} times", GC.CollectionCount(1));
-Console.WriteLine("\n Gen 2 has been swept {0} times", GC.CollectionCount(2));
 Console.ReadLine();
+
+static void CreateObjects(int count)
+{
+    MyResourceWrapper[] tonsOfObjects = new MyResourceWrapper[count];
+    for (int i = 0; i < count; i++)
+    {
+        tonsOfObjects[i] = new MyResourceWrapper();
+    }
+    tonsOfObjects = null;
+}

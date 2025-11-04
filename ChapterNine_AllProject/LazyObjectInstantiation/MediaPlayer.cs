@@ -7,12 +7,12 @@ namespace LazyObjectInstantiation
         public void Play() { }
         public void Pause() { }
         public void Stop() { }
-        private AllTracks _allSongs = new AllTracks();
+        private Lazy<AllTracks> _allSongs = new Lazy<AllTracks>();
 
 
-        private AllTracks GetAllTracks() 
+        public AllTracks GetAllTracks() 
         {
-            return _allSongs;
+            return _allSongs.Value;
         }
     }
 }

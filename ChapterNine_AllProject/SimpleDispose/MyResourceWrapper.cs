@@ -4,15 +4,14 @@ namespace SimpleDispose
 {
     class MyResourceWrapper : IDisposable
     {
-        public void Dispose()
+        ~MyResourceWrapper()
         {
-            Console.WriteLine("In dispose");
+
         }
 
-        public static void UsingDeclaration()
+        public void Dispose() 
         {
-            using var rw = new MyResourceWrapper();
-            Console.WriteLine("About to Dispose");
+            GC.SuppressFinalize(this);        
         }
     }
 }

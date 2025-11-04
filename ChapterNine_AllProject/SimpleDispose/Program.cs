@@ -1,8 +1,7 @@
 ﻿using System;
-using System.IO;
-using SimpleDispose;
+using FinalizableDisposableClass;
 
-Console.WriteLine("Fun With Dispose");
-Console.WriteLine("Usind Declaration viev");
-MyResourceWrapper.UsingDeclaration();
-Console.ReadLine();
+Console.WriteLine("Dispose()/ Destructor Combo Platter");
+MyResourceWrapper rw  = new MyResourceWrapper();
+rw.Dispose();
+MyResourceWrapper rw2 = new MyResourceWrapper();

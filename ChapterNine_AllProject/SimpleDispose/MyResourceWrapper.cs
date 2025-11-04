@@ -1,6 +1,6 @@
 using System;
 
-namespace SimpleDispose
+namespace FinalizableDisposableClass
 {
     class MyResourceWrapper : IDisposable
     {

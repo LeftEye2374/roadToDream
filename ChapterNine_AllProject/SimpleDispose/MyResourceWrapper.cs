@@ -4,14 +4,30 @@ namespace SimpleDispose
 {
     class MyResourceWrapper : IDisposable
     {
-        ~MyResourceWrapper()
-        {
+        private bool disposed = false;
 
+        public void Dispose()
+        {
+            CleanUp(true);
+            GC.SuppressFinalize(this);
         }
 
-        public void Dispose() 
+        private void CleanUp(bool disposing)
         {
-            GC.SuppressFinalize(this);        
+            if (!this.disposed) 
+            {
+                if (disposing)
+                {
+                    // освободить управляемые ресурсы
+                }
+                // отчистить неуправляемые ресурсы
+            }
+            disposed = true;
+        }
+
+        ~MyResourceWrapper() 
+        {
+            CleanUp(false);
         }
     }
 }

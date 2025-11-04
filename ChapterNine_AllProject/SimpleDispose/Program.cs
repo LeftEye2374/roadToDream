@@ -1,2 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+using System.IO;
+using SimpleDispose;
+
+Console.WriteLine("Fun With Dispose");
+MyResourceWrapper rw =  new MyResourceWrapper();
+rw.Dispose();
+Console.ReadLine();

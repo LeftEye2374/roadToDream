@@ -1,2 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+using System.Collections;
+
+static void SimpleBoxUnboxOperation()
+{
+    int myInt = 25;
+    object boxeInt = myInt;
+    int unboxedInt = (int) boxeInt;
+}

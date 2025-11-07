@@ -36,6 +36,7 @@ static void UseGenericList()
 
 static void UseGenericStack()
 {
+    Console.WriteLine("Use Genericis Stack");
     Stack<Person> stackOfPeople = new();
     stackOfPeople.Push(new Person
     {

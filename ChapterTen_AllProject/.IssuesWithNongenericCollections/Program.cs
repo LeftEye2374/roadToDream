@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
+using IssuesWithNonGenericCollections;
 
-WorkWithArrayList();
+UsePersonCollection();
+Console.ReadLine();
 
 static void SimpleBoxUnboxOperation()
 {
@@ -18,5 +20,20 @@ static void WorkWithArrayList()
     myInts.Add(35);
     int i = (int) myInts[0];
     Console.WriteLine(i);
+}
+
+static void UsePersonCollection()
+{
+    Console.WriteLine("Custom User Collection");
+    PersonCollection myPeople = new PersonCollection();
+    myPeople.AddPerson(new Person("Misha", "Borissov", 21));
+    myPeople.AddPerson(new Person("Max", "Borissov", 29));
+    myPeople.AddPerson(new Person("Natasha","Shap",24));
+    myPeople.AddPerson(new Person("Sonya","Borissova",18));
+
+    foreach(Person p in myPeople)
+    {
+        Console.WriteLine(p.ToString);
+    }
 }
 

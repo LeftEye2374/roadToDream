@@ -9,7 +9,7 @@ namespace IssuesWithNonGenericCollections
         public string LastName { get; set; }
 
         public Person() { }
-        public Person(int age,  string firstName, string lastName)
+        public Person(string firstName, string lastName, int age)
         {
             Age = age;
             FirstName = firstName;

@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-#
+# 
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IssuesWithNongenericCollections", ".IssuesWithNongenericCollections\IssuesWithNongenericCollections.csproj", "{D949E5BF-247C-4AF5-B159-F23794E5643F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithGenericCollections", ".FunWithGenericCollections\FunWithGenericCollections.csproj", "{FBC13FF5-BD41-4B5A-8829-D155C9D997AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,5 +15,9 @@ Global
 		{D949E5BF-247C-4AF5-B159-F23794E5643F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D949E5BF-247C-4AF5-B159-F23794E5643F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D949E5BF-247C-4AF5-B159-F23794E5643F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC13FF5-BD41-4B5A-8829-D155C9D997AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC13FF5-BD41-4B5A-8829-D155C9D997AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC13FF5-BD41-4B5A-8829-D155C9D997AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC13FF5-BD41-4B5A-8829-D155C9D997AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

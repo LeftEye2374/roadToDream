@@ -4,6 +4,13 @@ using IssuesWithNonGenericCollections;
 using System.Collections.Generic;
 
 
+int[] myInts = { 10,4,2,33,93};
+Array.Sort(myInts);
+foreach (int i in myInts )
+{
+    Console.WriteLine(i);
+}
+
 
 static void SimpleBoxUnboxOperation()
 {

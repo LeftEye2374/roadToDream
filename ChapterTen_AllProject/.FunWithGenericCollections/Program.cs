@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using FunWithGenericCollections;
 
-UseGenericList();
+UseGenericStack();
 Console.ReadLine();
 
 static void UseGenericList()
@@ -31,5 +31,41 @@ static void UseGenericList()
     foreach (Person p in arrayOnPeople)
     {
         Console.WriteLine("First Names: {0}", p.FirstName);
+    }
+}
+
+static void UseGenericStack()
+{
+    Stack<Person> stackOfPeople = new();
+    stackOfPeople.Push(new Person
+    {
+        FirstName = "Misha",
+        LastName = "Borissov", Age = 22
+    });
+    stackOfPeople.Push(new Person
+    {
+        FirstName = "Roma",
+        LastName = "Bainazarov", Age = 24
+    });
+    stackOfPeople.Push( new Person
+    {
+        FirstName = "Sasha",
+        LastName = "Skibel",
+        Age = 20
+    });
+    Console.WriteLine("Firs person is : {0} ", stackOfPeople.Peek());
+    Console.WriteLine("Pooped off {0}", stackOfPeople.Pop());
+    Console.WriteLine("\nFirst person is: {0}",  stackOfPeople.Peek());
+    Console.WriteLine("Pooped off {0}", stackOfPeople.Pop());
+    Console.WriteLine("\nFirst person item is: {0}",  stackOfPeople.Peek());
+    Console.WriteLine("Pooped off {0}", stackOfPeople.Pop());
+    try
+    {
+        Console.WriteLine("\nFirst person is: {0}", stackOfPeople.Peek());
+        Console.WriteLine("Pooped off {0}", stackOfPeople.Pop());
+    }
+    catch (InvalidOperationException e)
+    {
+        Console.WriteLine("Error! {0}", e.Message);
     }
 }

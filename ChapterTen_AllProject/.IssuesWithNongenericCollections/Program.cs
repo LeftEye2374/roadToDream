@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections;
 using IssuesWithNonGenericCollections;
+using System.Collections.Generic;
 
-UsePersonCollection();
-Console.ReadLine();
+
 
 static void SimpleBoxUnboxOperation()
 {
@@ -35,5 +35,21 @@ static void UsePersonCollection()
     {
         Console.WriteLine(p.ToString);
     }
+}
+
+static void UseGenericsList()
+{
+    Console.WriteLine("Fun With Generics");
+    List<Person> morePeople = new List<Person>();
+    morePeople.Add(new Person("Jack","Pivo",21));
+    Console.WriteLine(morePeople[0]);
+
+    List<int> moreInts = new List<int>();
+    moreInts.Add(10);
+    moreInts.Add(20);
+
+    // int sum = moreInts[1] + morePeople[0];
+    //Ошибка на этапе компиляции
+    // moreInts.Add(new Person ...) не может быть добавлена
 }
 

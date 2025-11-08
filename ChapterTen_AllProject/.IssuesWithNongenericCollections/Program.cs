@@ -3,13 +3,8 @@ using System.Collections;
 using IssuesWithNonGenericCollections;
 using System.Collections.Generic;
 
-
-int[] myInts = { 10,4,2,33,93};
-Array.Sort(myInts);
-foreach (int i in myInts )
-{
-    Console.WriteLine(i);
-}
+UseGenericStack();
+Console.ReadLine();
 
 
 static void SimpleBoxUnboxOperation()
@@ -58,5 +53,42 @@ static void UseGenericsList()
     // int sum = moreInts[1] + morePeople[0];
     //Ошибка на этапе компиляции
     // moreInts.Add(new Person ...) не может быть добавлена
+}
+
+static void UseGenericStack()
+{
+    Console.WriteLine("Fun with Stack");
+    Stack<Person> stackPerson = new();
+    stackPerson.Push(new Person()
+    {
+        FirstName = "Misha",
+        LastName = "Borissov", Age = 21
+    });
+    stackPerson.Push(new Person()
+    {
+        FirstName = "Sasha",
+        LastName = "Skibel", Age = 20
+    });
+    stackPerson.Push(new Person()
+    {
+        FirstName = "Sonya", 
+        LastName = "Borissova", Age = 18
+    });
+    Console.WriteLine("First person is: {0}",stackPerson.Peek);
+    Console.WriteLine("Popped off {0}", stackPerson.Pop);
+    Console.WriteLine("\nFirst person is: {0}", stackPerson.Peek);
+    Console.WriteLine("Popped off {0}", stackPerson.Pop);
+    Console.WriteLine("\nFirst person is: {0}", stackPerson.Peek);
+    Console.WriteLine("Popped off {0}", stackPerson.Pop);
+
+    try
+    {
+        Console.WriteLine("First person is: {0}", stackPerson.Peek);
+        Console.WriteLine("Popped off {0}", stackPerson.Pop);
+    }
+    catch (InvalidOperationException e)
+    {
+        Console.WriteLine("Error!{0}", e.Message);
+    }
 }
 

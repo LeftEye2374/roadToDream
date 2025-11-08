@@ -3,7 +3,7 @@ using System.Collections;
 using IssuesWithNonGenericCollections;
 using System.Collections.Generic;
 
-UseGenericStack();
+UseSortedSet();
 Console.ReadLine();
 
 
@@ -130,6 +130,37 @@ static void UseGenericQueue()
     static void GetCoffee(Person p)
     {
         Console.WriteLine("{0} got coffee!", p.FirstName);
+    }
+}
+
+static void UseSortedSet()
+{
+    SortedSet<Person> setOfPeople = new SortedSet<Person>(new SortPeopleByAge()) 
+    {
+        new Person {FirstName = "Misha", LastName = "Borissov", Age = 21},
+        new Person {FirstName = "Sasha", LastName = "Skibel", Age = 20},
+        new Person {FirstName = "Sonya", LastName = "Borissova", Age = 18 },
+        new Person {FirstName = "Misha", LastName = "Kashanin", Age = 21}
+    };
+    foreach(Person p in setOfPeople)
+    {
+        Console.WriteLine(p);
+    }
+    Console.WriteLine();
+    setOfPeople.Add(new Person()
+    {
+        FirstName = "Roma",
+        LastName = "Bainazarov", Age = 24
+    });
+    setOfPeople.Add(new Person()
+    {
+        FirstName = "Sasha",
+        LastName = "Pererva",
+        Age = 18
+    });
+    foreach(Person p in setOfPeople)
+    {
+        Console.WriteLine(p);
     }
 }
 

@@ -1,10 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# 
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IssuesWithNongenericCollections", ".IssuesWithNongenericCollections\IssuesWithNongenericCollections.csproj", "{D949E5BF-247C-4AF5-B159-F23794E5643F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithGenericCollections", ".FunWithGenericCollections\FunWithGenericCollections.csproj", "{FBC13FF5-BD41-4B5A-8829-D155C9D997AD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunWithObservableCollections", "FunWithObservableCollections\FunWithObservableCollections.csproj", "{B8617ED4-B70B-45A1-A639-1E3A8963FB93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomGenericMethod", ".CustomGenericMethod\CustomGenericMethod.csproj", "{3C3A218D-47B1-4063-876A-2100165486B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +55,18 @@ Global
 		{B8617ED4-B70B-45A1-A639-1E3A8963FB93}.Release|x64.Build.0 = Release|Any CPU
 		{B8617ED4-B70B-45A1-A639-1E3A8963FB93}.Release|x86.ActiveCfg = Release|Any CPU
 		{B8617ED4-B70B-45A1-A639-1E3A8963FB93}.Release|x86.Build.0 = Release|Any CPU
+		{3C3A218D-47B1-4063-876A-2100165486B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C3A218D-47B1-4063-876A-2100165486B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C3A218D-47B1-4063-876A-2100165486B9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3C3A218D-47B1-4063-876A-2100165486B9}.Debug|x64.Build.0 = Debug|Any CPU
+		{3C3A218D-47B1-4063-876A-2100165486B9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3C3A218D-47B1-4063-876A-2100165486B9}.Debug|x86.Build.0 = Debug|Any CPU
+		{3C3A218D-47B1-4063-876A-2100165486B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C3A218D-47B1-4063-876A-2100165486B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C3A218D-47B1-4063-876A-2100165486B9}.Release|x64.ActiveCfg = Release|Any CPU
+		{3C3A218D-47B1-4063-876A-2100165486B9}.Release|x64.Build.0 = Release|Any CPU
+		{3C3A218D-47B1-4063-876A-2100165486B9}.Release|x86.ActiveCfg = Release|Any CPU
+		{3C3A218D-47B1-4063-876A-2100165486B9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

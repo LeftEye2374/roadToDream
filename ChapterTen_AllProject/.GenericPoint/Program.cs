@@ -16,5 +16,12 @@ Point<string> p3 = new Point<string>("3i","i");
 Console.WriteLine("p3.ToString() = {0}", p3.ToString());
 p3.ResetPoint();
 Console.WriteLine("p3.ToString() = {0}", p3.ToString());
+Point<string> p4 = default;
+Console.WriteLine("p4.ToString() = {0}", p4.ToString());
+Console.WriteLine();
+
+Point<int> p5 = default;
+Console.WriteLine("p5.ToString() = {0}", p5.ToString());
+
 Console.ReadLine();
 

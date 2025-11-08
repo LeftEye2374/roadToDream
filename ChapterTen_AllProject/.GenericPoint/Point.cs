@@ -27,8 +27,8 @@ namespace GenericPoint
 
         public void ResetPoint()
         {
-            _xPos = default(T);
-            _yPos = default(T);
+            _xPos = default;
+            _yPos = default;
         }
     }
 }

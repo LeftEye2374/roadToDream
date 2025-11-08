@@ -74,21 +74,62 @@ static void UseGenericStack()
         FirstName = "Sonya", 
         LastName = "Borissova", Age = 18
     });
-    Console.WriteLine("First person is: {0}",stackPerson.Peek);
-    Console.WriteLine("Popped off {0}", stackPerson.Pop);
-    Console.WriteLine("\nFirst person is: {0}", stackPerson.Peek);
-    Console.WriteLine("Popped off {0}", stackPerson.Pop);
-    Console.WriteLine("\nFirst person is: {0}", stackPerson.Peek);
-    Console.WriteLine("Popped off {0}", stackPerson.Pop);
+    Console.WriteLine("First person is: {0}",stackPerson.Peek());
+    Console.WriteLine("Popped off {0}", stackPerson.Pop());
+    Console.WriteLine("\nFirst person is: {0}", stackPerson.Peek());
+    Console.WriteLine("Popped off {0}", stackPerson.Pop());
+    Console.WriteLine("\nFirst person is: {0}", stackPerson.Peek());
+    Console.WriteLine("Popped off {0}", stackPerson.Pop());
 
     try
     {
-        Console.WriteLine("First person is: {0}", stackPerson.Peek);
-        Console.WriteLine("Popped off {0}", stackPerson.Pop);
+        Console.WriteLine("First person is: {0}", stackPerson.Peek());
+        Console.WriteLine("Popped off {0}", stackPerson.Pop());
     }
     catch (InvalidOperationException e)
     {
-        Console.WriteLine("Error!{0}", e.Message);
+        Console.WriteLine("Error! {0}", e.Message);
+    }
+    // ????????????
+}
+
+static void UseGenericQueue()
+{
+    Console.WriteLine("Fun With Queue");
+    Queue<Person> personQueue = new();
+    personQueue.Enqueue(new Person()
+    {
+        FirstName = "Misha",
+        LastName = "Borissov",Age = 21
+    });
+    personQueue.Enqueue(new Person()
+    {
+        FirstName = "Sasha",
+        LastName = "Skibel", Age = 20
+    });
+    personQueue.Enqueue(new Person()
+    {
+        FirstName = "Sonya",
+        LastName = "Borissova", Age = 18
+    });
+
+    Console.WriteLine("{0} is first in line", personQueue.Peek().FirstName);
+    GetCoffee(personQueue.Dequeue());
+    GetCoffee(personQueue.Dequeue());
+    GetCoffee(personQueue.Dequeue());
+
+    try
+    {
+        GetCoffee(personQueue.Dequeue());
+    }
+    catch( InvalidOperationException ex)
+    {
+        Console.WriteLine("Error!{0}", ex.Message);
+    }
+    
+    static void GetCoffee(Person p)
+    {
+        Console.WriteLine("{0} got coffee!", p.FirstName);
     }
 }
 

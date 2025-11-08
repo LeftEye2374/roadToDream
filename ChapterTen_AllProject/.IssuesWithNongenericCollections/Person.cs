@@ -18,7 +18,7 @@ namespace IssuesWithNonGenericCollections
 
         public override string ToString()
         {
-            return $"Name: {FirstName}{LastName} with age - {Age} ";
+            return $"Name: {FirstName} {LastName} with age - {Age} ";
         }
     }
 }

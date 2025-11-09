@@ -1,4 +1,4 @@
-namespace Chap
+namespace SimpleIndexer
 {
     public class Person
     {

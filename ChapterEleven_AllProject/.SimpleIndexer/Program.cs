@@ -1,5 +1,8 @@
 ﻿using SimpleIndexer;
 
+UseGenericListOfPeople();
+Console.ReadLine();
+
 //Console.WriteLine("Fun With Indexes");
 
 //PersonCollection myPeople = new PersonCollection();

@@ -2,8 +2,12 @@
 using SimpleDeligate;
 
 Console.WriteLine("Simple Delegate Example");
-Console.WriteLine("x + y = {0}", SimpleMath.Add(10,15));
-Console.ReadLine();
+
+//BinaryOp b = new BinaryOp(SimpleMath.Add);
+//Console.WriteLine("10 + 10 = {0}", b(10,10));
+//Console.WriteLine();
+//DisplayDelegatelnfо(b);
+
 
 static void DisplayDelegatelnfо(Delegate delObj)
 {

@@ -1,24 +1,24 @@
 ﻿using SimpleIndexer;
 
-UseGenericListOfPeople();
-Console.ReadLine();
+FunWithPersonCollectionStringlndexer();
 
-//Console.WriteLine("Fun With Indexes");
+static void FunWithIndexes()
+{
+    PersonCollection myPeople = new PersonCollection();
+    myPeople[0] = new Person("Misha", "Borissov", 21);
+    myPeople[1] = new Person("Sonya", "Borissova", 20);
+    myPeople[2] = new Person("Sasha", "Skibel", 18);
+    myPeople[3] = new Person("Misha", "Kashanin", 22);
+    myPeople[4] = new Person("Alina", "Bond", 20);
 
-//PersonCollection myPeople = new PersonCollection();
-//myPeople[0] = new Person("Misha", "Borissov", 21);
-//myPeople[1] = new Person("Sonya", "Borissova", 20);
-//myPeople[2] =  new Person("Sasha", "Skibel", 18);
-//myPeople[3] = new Person("Misha", "Kashanin", 22);
-//myPeople[4] = new Person("Alina","Bond",20);
-
-//for (int i = 0; i < myPeople.Count; i++)
-//{
-//    Console.WriteLine("Person number: {0}", i);
-//    Console.WriteLine("Name: {0} {1}", myPeople[i].FirstName, myPeople[i].LastName );
-//    Console.WriteLine("Age: {0}", myPeople[i].Age);
-//    Console.WriteLine();
-//}
+    for (int i = 0; i < myPeople.Count; i++)
+    {
+        Console.WriteLine("Person number: {0}", i);
+        Console.WriteLine("Name: {0} {1}", myPeople[i].FirstName, myPeople[i].LastName);
+        Console.WriteLine("Age: {0}", myPeople[i].Age);
+        Console.WriteLine();
+    }
+}
 
 static void UseGenericListOfPeople()
 {
@@ -35,4 +35,19 @@ static void UseGenericListOfPeople()
         Console.WriteLine("Age: {0}", myPeople[i].Age);
         Console.WriteLine();
     }
+}
+
+static void FunWithPersonCollectionStringlndexer()
+{
+    Console.WriteLine("Fun With Indexeres");
+
+    PersonCollectionStringlndexer myPeopleStrings = new PersonCollectionStringlndexer();
+
+    myPeopleStrings["Homer"] = new Person("Homer", "Simson", 40);
+    myPeopleStrings["Misha"] = new Person("Misha", "Borissov", 21);
+    myPeopleStrings["Sonya"] = new Person("Sonya", "Borissova", 18);
+    myPeopleStrings["Sasha"] = new Person("Sasha", "Skibel", 20);
+    Person homer = myPeopleStrings["Homer"];
+    Console.WriteLine(homer.ToString());
+    Console.ReadLine();
 }

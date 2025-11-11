@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDelegate", "SimpleDel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarDelegate", "CarDelegate\CarDelegate.csproj", "{8F51AD31-9FB5-4BA6-810D-AEB20BDD5F1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionAndFuncDelegates", "ActionAndFuncDelegates\ActionAndFuncDelegates.csproj", "{CDBF09CC-1A87-4D5C-A86F-5FC518DD9842}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,18 @@ Global
 		{8F51AD31-9FB5-4BA6-810D-AEB20BDD5F1A}.Release|x64.Build.0 = Release|Any CPU
 		{8F51AD31-9FB5-4BA6-810D-AEB20BDD5F1A}.Release|x86.ActiveCfg = Release|Any CPU
 		{8F51AD31-9FB5-4BA6-810D-AEB20BDD5F1A}.Release|x86.Build.0 = Release|Any CPU
+		{CDBF09CC-1A87-4D5C-A86F-5FC518DD9842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDBF09CC-1A87-4D5C-A86F-5FC518DD9842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDBF09CC-1A87-4D5C-A86F-5FC518DD9842}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CDBF09CC-1A87-4D5C-A86F-5FC518DD9842}.Debug|x64.Build.0 = Debug|Any CPU
+		{CDBF09CC-1A87-4D5C-A86F-5FC518DD9842}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CDBF09CC-1A87-4D5C-A86F-5FC518DD9842}.Debug|x86.Build.0 = Debug|Any CPU
+		{CDBF09CC-1A87-4D5C-A86F-5FC518DD9842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDBF09CC-1A87-4D5C-A86F-5FC518DD9842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDBF09CC-1A87-4D5C-A86F-5FC518DD9842}.Release|x64.ActiveCfg = Release|Any CPU
+		{CDBF09CC-1A87-4D5C-A86F-5FC518DD9842}.Release|x64.Build.0 = Release|Any CPU
+		{CDBF09CC-1A87-4D5C-A86F-5FC518DD9842}.Release|x86.ActiveCfg = Release|Any CPU
+		{CDBF09CC-1A87-4D5C-A86F-5FC518DD9842}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,7 +5,6 @@ namespace CarDelegate
         public int CurrentSpeed { get; set; }
         public int MaxSpeed { get; set; } = 100;
         public string PetName { get; set; }
-
         private bool _carIsDead;
 
         public Car() { }
@@ -24,6 +23,30 @@ namespace CarDelegate
         public void RegisterWithCarEngine(CarEngineHandler methodToCall)
         {
             _listOfHandlers = methodToCall;
+        }
+
+        public void Accelerate(int delta)
+        {
+            if (_carIsDead)
+            {
+                _listOfHandlers?.Invoke("Sorry, this car is dead...");
+            }
+            else
+            {
+                CurrentSpeed += delta;
+                if(10 == (MaxSpeed - CurrentSpeed))
+                {
+                    _listOfHandlers?.Invoke("Curreful buddy! Gonna blow!");
+                }
+                if(CurrentSpeed >= MaxSpeed)
+                {
+                    _carIsDead = true;
+                }
+                else
+                {
+                    Console.WriteLine("CurrentSpeed = {0}", CurrentSpeed);
+                }
+            }
         }
     }
 }

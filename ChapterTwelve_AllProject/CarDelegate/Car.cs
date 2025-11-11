@@ -22,7 +22,7 @@ namespace CarDelegate
         // 3. Добавить регистрационную функцию для вызывающего кода
         public void RegisterWithCarEngine(CarEngineHandler methodToCall)
         {
-            _listOfHandlers = methodToCall;
+            _listOfHandlers += methodToCall;
         }
 
         public void Accelerate(int delta)

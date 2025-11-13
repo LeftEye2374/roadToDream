@@ -1,10 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# 
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessManipulator", ".ProcessManipulator\ProcessManipulator.csproj", "{28480FA7-DECD-4EC3-8219-031F8C560FFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28480FA7-DECD-4EC3-8219-031F8C560FFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28480FA7-DECD-4EC3-8219-031F8C560FFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28480FA7-DECD-4EC3-8219-031F8C560FFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28480FA7-DECD-4EC3-8219-031F8C560FFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

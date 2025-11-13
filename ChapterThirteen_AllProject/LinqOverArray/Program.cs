@@ -1,7 +1,7 @@
 ﻿using System;
 
 Console.WriteLine("Fun With LINQ Object");
-QueryOverStrings();
+QueryOverInts();
 Console.ReadLine();
 
 static void QueryOverStrings()
@@ -21,4 +21,15 @@ static void ReflectOverQueryResults(object resultSet, string queryType ="Query E
     Console.WriteLine($"Info about your query using {queryType}");
     Console.WriteLine("resulSet is of type: {0}", resultSet.GetType().Name);
     Console.WriteLine("resulSet location: {0}", resultSet.GetType().Assembly.GetName().Name);
+}
+
+static void QueryOverInts()
+{
+    int[] numbers = { 10,20,30,40,1,2,3,8 };
+    IEnumerable<int> subset = from i in numbers where i < 10 select i;
+    foreach(int i in subset)
+    {
+        Console.WriteLine("Item: {0}", i);
+    }
+    ReflectOverQueryResults(subset);
 }

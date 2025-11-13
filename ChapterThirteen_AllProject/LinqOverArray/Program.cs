@@ -16,8 +16,6 @@ static void QueryOverStrings()
     }
 }
 
-
-
 static void ReflectOverQueryResults(object resultSet, string queryType ="Query Expressions")
 {
     Console.WriteLine($"Info about your query using {queryType}");

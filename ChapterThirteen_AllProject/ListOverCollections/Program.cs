@@ -15,7 +15,8 @@ Console.ReadLine();
 
 static void GetFastCars(List<Car> myCars)
 {
-    var fastCars = from c in myCars where c.Speed > 55 select c;
+    var fastCars = from c in myCars where c.Speed > 55 
+                                          && c.Make == "BMW" select c;
     foreach (var car in fastCars )
     {
         Console.WriteLine("{0} is going too fast!", car.PetName);

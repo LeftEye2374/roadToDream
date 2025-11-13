@@ -10,7 +10,7 @@ ProductInfo[] itemInStock = new[]
     new ProductInfo{Name = "cake", Description = "blue cake", NumberInStock = 12},
     new ProductInfo{Name = "pizza", Description = "pizza", NumberInStock = 11},
 };
-MediumLvlQuery(itemInStock);
+GetNameAndDescription(itemInStock);
 Console.ReadLine();
 
 static void SelectEvrething(ProductInfo[] products)
@@ -40,5 +40,15 @@ static void MediumLvlQuery(ProductInfo[] products)
     foreach (var product in query)
     {
         Console.WriteLine(product);
+    }
+}
+
+static void GetNameAndDescription(ProductInfo[] products)
+{
+    Console.WriteLine("Name and Description");
+    var nameAndDescription = from p in products select (p.Name, p.Description);
+    foreach (var nd in  nameAndDescription )
+    {
+        Console.WriteLine(nd);
     }
 }

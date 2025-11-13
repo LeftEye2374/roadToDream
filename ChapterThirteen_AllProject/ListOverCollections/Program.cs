@@ -10,5 +10,14 @@ List<Car> myCar = new List<Car>()
     new Car {PetName = "Clunker", Color = "Rust", Speed = 5, Make = "Yugo"},
     new Car {PetName = "Melvin", Color = "White", Speed = 43, Make = "Ford"}
 };
+GetFastCars(myCar);
 Console.ReadLine();
 
+static void GetFastCars(List<Car> myCars)
+{
+    var fastCars = from c in myCars where c.Speed > 55 select c;
+    foreach (var car in fastCars )
+    {
+        Console.WriteLine("{0} is going too fast!", car.PetName);
+    }
+}

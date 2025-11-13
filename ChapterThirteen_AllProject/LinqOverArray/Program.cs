@@ -8,8 +8,8 @@ static void QueryOverStrings()
 {
     string[] currentVideoGames = { "Morrowind", "Uncharted 2", "Fallout 3", "Daxter", "BioShock 2" };
     
-    IEnumerable<string> subset = from g in currentVideoGames where g.Contains(" ") orderby g select g;
-    ReflectOverQueryResults(subset);
+    IEnumerable<string> subset = currentVideoGames.Where(g => g.Contains(" ")).OrderBy(g => g).Select(g => g);
+    ReflectOverQueryResults(subset, "Extension Methods");
     foreach (string s in subset )
     {
         Console.WriteLine(s);

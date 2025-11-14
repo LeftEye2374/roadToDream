@@ -24,5 +24,4 @@ switch (threadCount)
         Console.WriteLine("I dont know what you want");
         goto case "1";
 }
-
 Console.ReadLine();

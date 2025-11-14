@@ -11,6 +11,8 @@ string pid = Console.ReadLine();
 int pId = int.Parse(pid);
 EnumThreadsForPid(pId);
 
+StartAndKillProcess();
+
 Console.ReadLine();
 
 
@@ -60,4 +62,30 @@ static void EnumThreadsForPid(int pID)
         Console.WriteLine(info);
     }
     Console.WriteLine("***********************************");
+}
+
+static void StartAndKillProcess()
+{
+    Process proc = null;
+    try
+    {
+        proc = Process.Start(@"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe","www.facebook.com");
+    }
+    catch (InvalidOperationException ex)
+    {
+        Console.WriteLine(ex.Message);
+    }
+    Console.WriteLine("--> Hit enter to kill {0} ...", proc.ProcessName);
+    Console.WriteLine();
+    try
+    {
+        foreach( var p in Process.GetProcessesByName("MsEdge"))
+        {
+            p.Kill(true);
+        }
+    }
+    catch (InvalidOperationException ex)
+    {
+        Console.WriteLine(ex.Message);
+    }
 }

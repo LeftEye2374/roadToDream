@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+using MyShapes;
+
+Square sq = new Square();
+Hexagon h =  new Hexagon();
+Circle c = new Circle();

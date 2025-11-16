@@ -23,6 +23,6 @@ static void Add(object data)
         Console.WriteLine("ID of thread in Add(): {0}", Thread.CurrentThread.ManagedThreadId);
         Console.WriteLine("{0} + {1} = {2}", ap.a, ap.b, ap.a + ap.b);
         // Сообщит другому потоку что работа завершена
-        _waitHandle.Set();
+        // _waitHandle.Set();
     }
 }

@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # 
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectorуАрри", ".DirectorуАрри\DirectorуАрри.csproj", "{90D4E205-C7E3-4C70-A9B2-0DBEB8D7D676}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSerialize", ".SimpleSerialize\SimpleSerialize.csproj", "{9BF4DA52-5CE3-4AEB-A8A3-1F1BFE5D0FFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{90D4E205-C7E3-4C70-A9B2-0DBEB8D7D676}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90D4E205-C7E3-4C70-A9B2-0DBEB8D7D676}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90D4E205-C7E3-4C70-A9B2-0DBEB8D7D676}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BF4DA52-5CE3-4AEB-A8A3-1F1BFE5D0FFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BF4DA52-5CE3-4AEB-A8A3-1F1BFE5D0FFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BF4DA52-5CE3-4AEB-A8A3-1F1BFE5D0FFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BF4DA52-5CE3-4AEB-A8A3-1F1BFE5D0FFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

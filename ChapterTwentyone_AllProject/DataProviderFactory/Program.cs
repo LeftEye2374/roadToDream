@@ -41,23 +41,25 @@ using (DbConnection connection = factory.CreateConnection())
 }
 Console.ReadLine();
 
-static DbProviderFactory GetDbProviderFactory(DataProviderFactoryEnum provider) => provider switch
+static DbProviderFactory GetDbProviderFactory(DataProviderEnum provider) => provider switch
 {
-    DataProviderFactoryEnum.SqlServer => SqlClientFactory.Instance,
-    DataProviderFactoryEnum.OleDb => OleDbFactory.Instance,
+    DataProviderEnum.SqlServer => SqlClientFactory.Instance,
+    DataProviderEnum.Odbc => OdbcFactory.Instance,
+    DataProviderEnum.OleDb => OleDbFactory.Instance,
+    _ => null
 };
 
-static (DataProviderFactoryEnum Provider, string ConnectionString)
+static (DataProviderEnum Provider, string ConnectionString)
     GetProviderFromConfiguration()
 {
     IConfiguration config = new ConfigurationBuilder()
         .SetBasePath(Directory.GetCurrentDirectory())
-        .AddJsonFile("appsetings.json", true, true)
+        .AddJsonFile("appsettings.json", true, true)
         .Build();
     var providerName = config["ProviderName"];
-    if(Enum.TryParse<DataProviderFactoryEnum> (providerName, out DataProviderFactoryEnum provider))
+    if(Enum.TryParse<DataProviderEnum> (providerName, out DataProviderEnum provider))
     {
-        return (provider, config[$"{providerName}:ConnectionString]"]);
+        return (provider, config[$"{providerName}:ConnectionString"]);
     };
     throw new Exception("Invalid data provider value supplied");
 }

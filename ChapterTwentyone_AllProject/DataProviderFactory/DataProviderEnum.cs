@@ -1,6 +1,6 @@
 namespace DataProviderFactory 
 {
-    public enum DataProviderFactoryEnum
+    public enum DataProviderEnum
     {
         SqlServer,
         OleDb,

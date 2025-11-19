@@ -35,8 +35,29 @@ using (DbConnection connection = factory.CreateConnection())
         Console.WriteLine("******************Current Inventory******************");
         while (dataReader.Read())
         {
-            Console.WriteLine($"--> Car #{dataReader["Id]} is a {datReader["Name"]}.");
+            Console.WriteLine($"--> Car #{dataReader["Id"]} is a {dataReader["Name"]}.");
         }
     }
 }
 Console.ReadLine();
+
+static DbProviderFactory GetDbProviderFactory(DataProviderFactoryEnum provider) => provider switch
+{
+    DataProviderFactoryEnum.SqlServer => SqlClientFactory.Instance,
+    DataProviderFactoryEnum.OleDb => OleDbFactory.Instance,
+};
+
+static (DataProviderFactoryEnum Provider, string ConnectionString)
+    GetProviderFromConfiguration()
+{
+    IConfiguration config = new ConfigurationBuilder()
+        .SetBasePath(Directory.GetCurrentDirectory())
+        .AddJsonFile("appsetings.json", true, true)
+        .Build();
+    var providerName = config["ProviderName"];
+    if(Enum.TryParse<DataProviderFactoryEnum> (providerName, out DataProviderFactoryEnum provider))
+    {
+        return (provider, config[$"{providerName}:ConnectionString]"]);
+    };
+    throw new Exception("Invalid data provider value supplied");
+}

@@ -8,5 +8,16 @@ using (SqlConnection connection = new SqlConnection())
     connection.Open();
 
     string sql = @"SELECT i.id, m.Name as Make, i.Color, i.PenName FROM Inventory i INNER JOIN Makes m on m.Id = i.MakeId";
+    SqlCommand myCommand = new SqlCommand(sql, connection);
 
+    using (SqlDataReader myDataReader = myCommand.ExecuteReader())
+    {
+        while (myDataReader.Read())
+        {
+            Console.WriteLine($"-> Make: {myDataReader["Make"]}, PetName:{myDataReader["PetName"]}, Color: {myDataReader["Color"]}");
+        }
+    }
 }
+Console.ReadLine();
+
+

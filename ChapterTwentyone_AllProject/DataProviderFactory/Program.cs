@@ -12,6 +12,8 @@ var (provider, connectionString) = GetProviderFromConfiguration();
 DbProviderFactory factory = GetDbProviderFactory(provider);
 using (DbConnection connection = factory.CreateConnection())
 {
+
+
     if(connection == null)
     {
         Console.WriteLine($"Unable to create connectino object");

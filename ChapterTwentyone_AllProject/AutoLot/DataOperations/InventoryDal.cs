@@ -106,5 +106,18 @@ namespace AutoLot.Dal.DataOperations
             reader.Close();
             return car;
         }
+
+        public void InserAuto(string color, int makeId, string petName)
+        {
+            OpenConnection();
+            string sql = $@"INSERT INTO Inventory(MakeId, Color, PetName) VALUES ('{makeId}', '{color}', '{petName}')";
+
+            using (SqlCommand command = new SqlCommand(sql, _sqlConnection))
+            {
+                command.CommandType = CommandType.Text;
+                command.ExecuteNonQuery();
+            }
+            CloseConnection();
+        }
     }
 }

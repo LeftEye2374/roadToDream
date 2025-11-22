@@ -6,8 +6,10 @@ using Microsoft.Data.SqlClient;
 
 namespace AutoLot.Dal.DataOperations
 {
-    public class InventoryDal
+    public class InventoryDal : IDisposable
     {
+        bool _disposed = false;
+
         private SqlConnection _sqlConnection = null;
 
         private readonly string _connectionString;
@@ -34,6 +36,25 @@ namespace AutoLot.Dal.DataOperations
             {
                 _sqlConnection?.Close();
             }
+        }
+
+        protected virtual void Dispose( bool disposing )
+        {
+            if (_disposed)
+            {
+                return;
+            }
+            if( disposing )
+            {
+                _sqlConnection.Dispose();
+            }
+            _disposed = true;
+        } 
+
+        public void Dispose()
+        {
+            Dispose( true );
+            GC.SuppressFinalize(this);
         }
     }
 }

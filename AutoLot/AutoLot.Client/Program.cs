@@ -29,7 +29,7 @@ catch (Exception ex)
 {
     Console.WriteLine($"An exception occurre: {ex.Message}");
 }
-dal.InserAuto(new Car({ Color = "Blue", MakeId = 5, PetName = "Tom Monstr" });
+dal.InserAuto(new Car{ Color = "Blue", MakeId = 5, PetName = "Tom Monstr" });
 
 list = dal.GetAllInventory();
 var newCar = list.First(x => x.PetName == "Tom Monstr");

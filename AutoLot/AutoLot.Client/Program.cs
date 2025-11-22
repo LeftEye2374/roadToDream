@@ -37,6 +37,6 @@ Console.WriteLine("**************** New Car ****************");
 Console.WriteLine("Id\tMake\tColor\tPetName");
 Console.WriteLine($"{newCar.Id}\t{newCar.Make}\t{newCar.Color}\t{newCar.PetName}");
 dal.DeleteCar(newCar.Id);
-Console.ReadLine()_;
+Console.ReadLine();
 
 

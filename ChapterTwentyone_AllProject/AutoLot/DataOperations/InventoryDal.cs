@@ -107,15 +107,35 @@ namespace AutoLot.Dal.DataOperations
             return car;
         }
 
-        public void InserAuto(string color, int makeId, string petName)
+        public void InserAuto(Car car)
         {
             OpenConnection();
-            string sql = $@"INSERT INTO Inventory(MakeId, Color, PetName) VALUES ('{makeId}', '{color}', '{petName}')";
+            string sql = $@"INSERT INTO Inventory(MakeId, Color, PetName) VALUES ('{car.MakeId}', '{car.Color}', '{car.PetName}')";
 
             using (SqlCommand command = new SqlCommand(sql, _sqlConnection))
             {
                 command.CommandType = CommandType.Text;
                 command.ExecuteNonQuery();
+            }
+            CloseConnection();
+        }
+
+        public void DeleteCar(int Id)
+        {
+            OpenConnection();
+            string sql = $@"DELETE FROM Inventory WHERE Id = '{Id}'";
+            using (SqlCommand command = new SqlCommand())
+            {
+                try
+                {
+                    command.CommandType = CommandType.Text;
+                    command.ExecuteNonQuery();
+                }
+                catch( SqlException ex)
+                {
+                    Exception error = new Exception("Error! This car is on order!", ex);
+                    throw error;
+                }
             }
             CloseConnection();
         }

@@ -81,5 +81,30 @@ namespace AutoLot.Dal.DataOperations
             reader.Close();
             return inventory;
         }
+
+        public CarViewModel GetCarById(int Id)
+        {
+            OpenConnection();
+            CarViewModel car = null;
+
+            string sql = $@"SELECT i.Id, i.Color, i.PetName, m.Name as Make FROM Inventory i INNER JOIN Makes m on m.Id = i.MakeId WHERE i.Id = {Id}";
+            using SqlCommand command = new SqlCommand(sql, _sqlConnection)
+            {
+                CommandType = CommandType.Text
+            };
+            SqlDataReader reader = command.ExecuteReader(CommandBehavior.CloseConnection);
+            while(reader.Read())
+            {
+                car = new CarViewModel 
+                {
+                    Id = (int)reader["Id"],
+                    Color = (string)reader["Color"],
+                    PetName = (string)reader["PetName"],
+                    Make = (string)reader["Make"]
+                };
+            }
+            reader.Close();
+            return car;
+        }
     }
 }

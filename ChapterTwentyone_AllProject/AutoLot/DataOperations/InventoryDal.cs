@@ -139,5 +139,17 @@ namespace AutoLot.Dal.DataOperations
             }
             CloseConnection();
         }
+
+        public void UpdatePetName(int Id, string PetName)
+        {
+            OpenConnection();
+            string sql = $"UPDATE Inventory SET PetName = '{PetName}' WHERE Id = '{Id}' ";
+
+            using (SqlCommand command = new SqlCommand(sql, _sqlConnection))
+            {
+                command.ExecuteNonQuery();
+            }
+            CloseConnection();
+        }
     }
 }

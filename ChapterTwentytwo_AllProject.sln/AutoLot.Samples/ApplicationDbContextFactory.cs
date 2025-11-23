@@ -3,15 +3,15 @@ using Microsoft.EntityFrameworkCore.Design;
 
 namespace AutoLot.Samples
 {
-    public class ApplicationDbContextFactory : IDesignTimeDbContextFactory<ApplicationDbConxtex>
+    public class ApplicationDbContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
     {
-        public ApplicationDbConxtex CreateDbContext(string[] args)
+        public ApplicationDbContext CreateDbContext(string[] args)
         {
-            var OptionBuilder = new DbContextOptionsBuilder<ApplicationDbConxtex>();
+            var OptionBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
             var ConnectionString = @"server=.,5433;Database=AutoLotSamples;User Id=sa;Password=P@ssw0rd;";
             OptionBuilder.UseSqlServer(ConnectionString);
             Console.WriteLine(ConnectionString);
-            return new ApplicationDbConxtex(OptionBuilder.Options);
+            return new ApplicationDbContext(OptionBuilder.Options);
         }
     }
 }

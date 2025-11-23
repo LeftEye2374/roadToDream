@@ -1,10 +1,11 @@
 using Microsoft.EntityFrameworkCore;
+using AutoLot.Samples.Models;
 
 namespace AutoLot.Samples 
 {
-    public class ApplicationDbConxtex : DbContext
+    public partial class ApplicationDbContext : DbContext
     {
-        public ApplicationDbConxtex(DbContextOptions<ApplicationDbConxtex> options) : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
 
@@ -12,6 +13,9 @@ namespace AutoLot.Samples
         {
             OnModelCreatingPartial(modelBuilder);
         }
-        partial void OnModelCreatingPartial (ModelBuilder modelBuilder);
+
+        public DbSet<Car> Cars { get; set; }
+
+        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }

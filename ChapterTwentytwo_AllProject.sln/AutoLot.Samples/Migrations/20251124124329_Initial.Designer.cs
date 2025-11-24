@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AutoLot.Samples.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251124101535_TPH")]
-    partial class TPH
+    [Migration("20251124124329_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,13 +24,28 @@ namespace AutoLot.Samples.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("AutoLot.Samples.Models.Car", b =>
+            modelBuilder.Entity("AutoLot.Samples.Models.BaseEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<byte[]>("TimeStamp")
+                        .IsRequired()
+                        .HasColumnType("varbinary(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("BaseEntities", (string)null);
+
+                    b.UseTptMappingStrategy();
+                });
+
+            modelBuilder.Entity("AutoLot.Samples.Models.Car", b =>
+                {
+                    b.HasBaseType("AutoLot.Samples.Models.BaseEntity");
 
                     b.Property<string>("Color")
                         .IsRequired()
@@ -43,13 +58,16 @@ namespace AutoLot.Samples.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<byte[]>("TimeStamp")
-                        .IsRequired()
-                        .HasColumnType("varbinary(max)");
+                    b.ToTable("Cars", (string)null);
+                });
 
-                    b.HasKey("Id");
-
-                    b.ToTable("Cars");
+            modelBuilder.Entity("AutoLot.Samples.Models.Car", b =>
+                {
+                    b.HasOne("AutoLot.Samples.Models.BaseEntity", null)
+                        .WithOne()
+                        .HasForeignKey("AutoLot.Samples.Models.Car", "Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

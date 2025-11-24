@@ -11,12 +11,13 @@ namespace AutoLot.Samples
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<BaseEntity>().ToTable("BaseEntities");
-            modelBuilder.Entity<Car>().ToTable("Cars");
-            OnModelCreatingPartial(modelBuilder);
+            //modelBuilder.Entity<BaseEntity>().ToTable("BaseEntities");
+            //modelBuilder.Entity<Car>().ToTable("Cars");
+            //OnModelCreatingPartial(modelBuilder);
         }
 
         public DbSet<Car> Cars { get; set; }
+        public DbSet<Make> Makes { get; set; }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }

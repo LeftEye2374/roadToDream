@@ -11,6 +11,8 @@ namespace AutoLot.Samples
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<BaseEntity>().ToTable("BaseEntities");
+            modelBuilder.Entity<Car>().ToTable("Cars");
             OnModelCreatingPartial(modelBuilder);
         }
 

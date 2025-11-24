@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AutoLot.Samples.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251123151447_TPH")]
+    [Migration("20251124101535_TPH")]
     partial class TPH
     {
         /// <inheritdoc />

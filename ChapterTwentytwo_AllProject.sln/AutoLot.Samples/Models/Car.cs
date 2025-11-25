@@ -18,8 +18,6 @@ namespace AutoLot.Samples.Models
         [ForeignKey(nameof(MakeId))]
         public Make MakeNavigation { get; set; }
 
-        public Radio RadiooNavigations { get; set; }
-
         [InverseProperty(nameof(Driver.Cars))]
         public IEnumerable<Driver> Drivers { get; set; } = new List<Driver>();
     }

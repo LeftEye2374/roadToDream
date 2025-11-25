@@ -15,7 +15,7 @@ namespace AutoLot.Samples.Models
         public string PetName { get; set; }
         public int MakeId { get; set; }
 
-        [ForeignKey(nameof(MakeId))]]
+        [ForeignKey(nameof(MakeId))]
         public Make MakeNavigation { get; set; }
 
         public Radio RadiooNavigations { get; set; }

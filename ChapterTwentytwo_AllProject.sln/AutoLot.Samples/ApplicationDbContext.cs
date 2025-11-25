@@ -30,7 +30,7 @@ namespace AutoLot.Samples
                 .IsConcurrencyToken();
             });
         }
-
+         
         public virtual DbSet<Make> Makes { get; set; }
         public virtual DbSet<Car> Cars { get; set; }
         public virtual DbSet<Radio> Radios { get; set; }

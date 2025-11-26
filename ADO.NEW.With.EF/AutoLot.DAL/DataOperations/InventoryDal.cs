@@ -20,7 +20,7 @@ namespace AutoLot.Dal.DataOperations
 
         private void OpenConnection()
         {
-            _sqlConnectoin = new SqlConnection()
+            _sqlConnectoin = new SqlConnection
             {
                 ConnectionString = _connectionString
             };

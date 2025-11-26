@@ -8,12 +8,30 @@ namespace AutoLot.Dal.DataOperations
 {
     public class InventoryDal
     {
+        private SqlConnection _sqlConnectoin = null;
+
         private readonly string _connectionString;
 
         public InventoryDal() : this(@"Data Source=.,5433; User Id=sa; Password=P@ssw0rd;Initial Catolog=AutoLot")
         {
         }
         public InventoryDal(string connectionString) => _connectionString= connectionString;
-       
+
+        private void OpenConnection()
+        {
+            _sqlConnectoin = new SqlConnection()
+            {
+                ConnectionString = _connectionString
+            };
+            _sqlConnectoin.Open();
+        } 
+
+        private void CloseConnection()
+        {
+            if (_sqlConnectoin?.State != ConnectionState.Open)
+            {
+                _sqlConnectoin?.Close();
+            }
+        }
     }
 }

@@ -1,4 +1,4 @@
-namespace AutoLot.Dal.Mdoels
+namespace AutoLot.Dal.Models
 {
     public class Car
     {

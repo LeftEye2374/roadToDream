@@ -1,6 +1,6 @@
-namespace AutoLot.Dal.Mdoels
+namespace AutoLot.Dal.Models
 {
-    public class CarViewModel
+    public class CarViewModel : Car
     {
         public string Make {  get; set; }
     }

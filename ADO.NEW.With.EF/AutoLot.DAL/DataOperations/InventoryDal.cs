@@ -18,9 +18,6 @@ namespace AutoLot.Dal.DataOperations
         }
         public InventoryDal(string connectionString) => _connectionString= connectionString;
 
-
-
-
         private void OpenConnection() 
         {
             _sqlConnectoin = new SqlConnection

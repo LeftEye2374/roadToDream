@@ -13,11 +13,11 @@ namespace AutoLot.Dal.DataOperations
 
         private readonly string _connectionString;
 
-        public InventoryDal() : this(@"Data Source=.,5433; User Id=sa; Password=P@ssw0rd;Initial Catolog=AutoLot")
+        public InventoryDal() : this(@"Data Source=.,5433; User Id=sa; Password=P@ssw0rd;Initial Catalog=AutoLot; TrustServerCertificate=true")
         {
         }
         public InventoryDal(string connectionString) => _connectionString= connectionString;
-
+        
         private void OpenConnection() 
         {
             _sqlConnectoin = new SqlConnection
@@ -84,8 +84,7 @@ namespace AutoLot.Dal.DataOperations
         {
             OpenConnection();
             CarViewModel car = null;
-            string sql = $@"SELECT i.Id, i.Color, i.PetName, m.Make AS Make FROM Inventory i INNER JOIN Makes m ON m.Id = i.MakeId WHERE i.Id = {id}";
-            using SqlCommand command = new SqlCommand(sql, _sqlConnectoin)
+            string sql = @"SELECT i.Id, i.Color, i.PetName, m.Name AS Make FROM Inventory i INNER JOIN Makes m ON m.Id = i.MakeId WHERE i.Id = @Id"; using SqlCommand command = new SqlCommand(sql, _sqlConnectoin)
             {
                 CommandType = CommandType.Text
             };

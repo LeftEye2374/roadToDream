@@ -84,10 +84,12 @@ namespace AutoLot.Dal.DataOperations
         {
             OpenConnection();
             CarViewModel car = null;
-            string sql = @"SELECT i.Id, i.Color, i.PetName, m.Name AS Make FROM Inventory i INNER JOIN Makes m ON m.Id = i.MakeId WHERE i.Id = @Id"; using SqlCommand command = new SqlCommand(sql, _sqlConnectoin)
+            string sql = @"SELECT i.Id, i.Color, i.PetName, m.Name AS Make FROM Inventory i INNER JOIN Makes m ON m.Id = i.MakeId WHERE i.Id = @Id";
+            using SqlCommand command = new SqlCommand(sql, _sqlConnectoin)
             {
                 CommandType = CommandType.Text
             };
+            command.Parameters.AddWithValue("@Id", id);
             SqlDataReader dataReader = command.ExecuteReader(CommandBehavior.CloseConnection);
             while (dataReader.Read())
             {

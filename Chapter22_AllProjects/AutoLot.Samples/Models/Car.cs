@@ -5,5 +5,8 @@ namespace AutoLot.Samples.Models
         public string Color { get; set; }
         public string PetName { get; set; }
         public int MakeId { get; set; }
+        public Make MakeNavigations { get; set; }
+        public Radio RadioNavigation { get; set; }
+        public IEnumerable<CarDriver> CarDrivers {  get; set; }
     }
 }

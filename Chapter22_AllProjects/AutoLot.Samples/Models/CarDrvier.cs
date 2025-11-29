@@ -5,6 +5,5 @@ namespace AutoLot.Samples.Models
         public int CarId { get; set; }
         public Car CarNavigation { get; set; }
         public int DriverId { get; set; }
-        public Driver DriverNavigation { get; set; }
     }
 }

@@ -11,9 +11,7 @@ namespace AutoLot.Samples
 
         public virtual DbSet<Car> Cars { get; set; }
         public virtual DbSet<Make> Makes { get; set; }
-        public virtual DbSet<Radio> Radios { get; set; }
-        public virtual DbSet<Driver> Drivers { get; set; }
-
+ 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

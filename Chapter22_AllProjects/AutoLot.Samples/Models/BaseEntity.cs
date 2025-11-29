@@ -7,7 +7,6 @@ namespace AutoLot.Samples.Models
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        //[Timestamp]
-        //public byte[] TimeStamp { get; set; }
+        public byte[] TimeStamp { get; set; }
     }
 }

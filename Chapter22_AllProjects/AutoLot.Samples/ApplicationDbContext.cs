@@ -16,9 +16,22 @@ namespace AutoLot.Samples
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<BaseEntity>().ToTable("BaseEntities");
-            //modelBuilder.Entity<Car>().ToTable("Cars");
-            //OnModelCreatingPartial(modelBuilder);
+            modelBuilder.Entity<Car>(entity => 
+            {
+                entity.ToTable("Inventory", "dbo");
+                entity.HasKey(e => e.Id);
+                entity.HasIndex(e => e.MakeId, "IX_Inventory_MakeId");
+                entity.Property(e => e.Color)
+                .IsRequired()
+                .HasMaxLength(50);
+                entity.Property(e => e.PetName)
+                .IsRequired()
+                .HasMaxLength(50);
+                entity.Property(e => e.TimeStamp)
+                .IsRowVersion()
+                .IsConcurrencyToken();
+
+            });
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);

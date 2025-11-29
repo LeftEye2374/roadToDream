@@ -7,6 +7,6 @@ namespace AutoLot.Samples.Models
         public int MakeId { get; set; }
         public Make MakeNavigations { get; set; }
         public Radio RadioNavigation { get; set; }
-        public IEnumerable<CarDriver> CarDrivers {  get; set; }
+        public IEnumerable<CarDriver> CarDrivers { get; set; }
     }
 }

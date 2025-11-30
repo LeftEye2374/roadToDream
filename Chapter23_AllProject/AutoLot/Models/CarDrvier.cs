@@ -1,4 +1,4 @@
-namespace AutoLot.Samples.Models
+namespace AutoLot.Models
 {
     public class CarDriver
     {

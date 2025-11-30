@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace AutoLot.Samples.Models
+namespace AutoLot.Models
 {
     public abstract class BaseEntity
     {

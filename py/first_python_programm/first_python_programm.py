@@ -68,3 +68,32 @@ elif b + c > a:
     print('YES')
 else:
     print('NO')
+
+# ex 6
+
+x = int(input())
+
+if x >= 0 and x <= 39:
+    print('неудовлетворительно')
+elif x >= 40 and x <= 59:
+    print('удовлетворительно')
+elif x >= 60 and x <= 79:
+    print('хорошо')
+elif x >=80 and x <= 100:
+    print('отлично')
+
+# ex 7
+
+x = int(input())
+y = int(input())
+
+op = input()
+
+if op == '+':
+    print(x + y)
+elif op == '-':
+    print(x - y)
+elif op == '*':
+    print(x * y)
+elif op == '/':
+    print(x / y)
